@@ -1,0 +1,172 @@
+.leftLogo{
+	text-align: center;
+}
+.rightMenu{
+	text-align: right;
+}
+.marginTop{
+	margin-top: 1%;
+}
+.navEd{
+	color: #3B9B0E;
+	border-bottom: 1px solid #3B9B0E;
+}
+.title_text{
+	color: #1D1D22;
+	font-size: 33px;
+	font-family: PingFang-SC-Medium, PingFang-SC;
+	font-weight: 500;
+	margin-top: 15%;
+}
+.title_text1{
+	font-size: 17px;
+	font-family: PingFang-SC-Medium, PingFang-SC;
+	font-weight: 500;
+	color: #1D1D22;
+}
+.leftText{
+	text-align: right;
+}
+.rightImg{
+	text-align: left;
+	margin-top: 3%;
+}
+.navWidth{
+/* 	width: 679px; */
+	float: right;
+}
+.bgImg{
+	width: 100%;
+	height: 100%;
+}
+.bgImgBox{
+	width: 457px;
+	height: 280px;
+}
+.text_box{
+	/* width: 80%; */
+	float: right;
+	text-align: left;
+}
+.top7{
+	margin-top: 7%;
+}
+.top4{
+	margin-top: 4%;
+}
+.top5{
+	margin-top: 3%;
+}
+.top1{
+	margin-top: 1%;
+}
+.top2{
+	margin-top: 2%;
+}
+.top6{
+	margin-top: 6%;
+}
+
+.text{
+	text-align: center;
+	font-size: 17px;
+	font-family: PingFang-SC-Regular, PingFang-SC;
+	font-weight: 400;
+	color: #1D1D22;
+}
+.text1{
+	text-align: center;
+	font-size: 17px;
+	font-family: PingFang-SC-Medium, PingFang-SC;
+	font-weight: 500;
+	color: #1D1D22;
+}
+/* .text1Box{
+
+	padding: 15px 40px 15px 40px;
+	width: 73%;
+	margin: 15px auto;
+	border: 1px solid #343434;;
+	font-weight: 400;
+	color: #1D1D22;
+	line-height: 27px;
+} */
+.cooperation{
+	/* margin-left: 3.5%; */
+}
+.cooperation div{
+	/* width: 100px; */
+	height: 50px;
+	background-color: #CECECE;
+}
+.btn-custom{
+	color: #fff;
+	background-color: #CECECE;
+}
+.BCPbox{
+	text-align: center;
+}
+.BCPbox img{
+	width: 221px;
+	height: 118px;
+	margin-left: 2%;
+}
+.bottomImg{
+	/* text-align: center; */
+	
+}
+.bottomImgBox div{
+/* 	width: 30px; */
+	height: 25px;
+	background-color: #CECECE;
+	
+	  
+}
+.bottomText{
+	text-align: center;
+	font-size: 12px;
+	font-family: PingFang-SC-Regular, PingFang-SC;
+	font-weight: 400;
+	color: #CECECE;
+	line-height: 20px;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color:transparent;
+}
+a>span{
+	color: #CECECE;
+}
+.row{
+	width: 80%;
+	margin-left: 10%;
+}
+.floatLeft{
+	float: left;
+}
+.floatRight{
+	float: right;
+}
+a{
+	text-decoration:none;
+}
+.switch_{
+	margin-top: 9px;
+	color: #CECECE;
+	text-align: center;
+}
+a:hover {
+	text-decoration: none;
+	cursor:pointer;
+}
+.marginRight{
+	margin-right: 15px;
+	color: #CECECE;
+}
+.btn {
+	padding: 3px 12px!important;
+}
+.cnImg{
+	width: 21px;
+	height: 20px;
+	margin-right: 5px;
+}
