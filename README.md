@@ -1,4 +1,4 @@
-# web3meatmask
+#  MatrixETF
 
 ## Project setup
 ```
