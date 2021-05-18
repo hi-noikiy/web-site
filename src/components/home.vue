@@ -8,7 +8,7 @@
 				<div class="rightMenu">
 					<ul class="nav nav-pills navWidth">
 						<li role="presentation" class="">
-							<a href="#" ><span class='navEd'>Home</span></a>
+							<a href="#" ><span class='ed'>Home</span></a>
 						</li>
 						<li role="presentation">
 							<a href=""><span>Docs</span></a>
@@ -109,7 +109,7 @@
 				<div class='time'>©2020 MatrixETF</div>
 			</div>
 			<div class='list_2'>
-				<div style='margin-top: 60px;'>Resources</div>
+				<div class='ed' style='margin-top: 60px;'>Resources</div>
 				<div>Whitelist</div>
 				<div>Docs</div>
 				<div>Brand suite</div>
@@ -117,14 +117,14 @@
 			</div>
 			
 			<div class='list_2'>
-				<div style='margin-top: 60px;'>Token</div>
+				<div class='ed' style='margin-top: 60px;'>Token</div>
 				<div>MDF</div>
 				<div>Token contract address</div>
 				<div>Token market value link</div>
 				
 			</div>
 			<div class='list_4'>
-				<div class='contact'>Contact Us</div>
+				<div class='contact ed'>Contact Us</div>
 				<div class='bottomImg'>
 					<div>
 						<img  src="../img/twitter.png" alt="">
@@ -519,7 +519,7 @@ export default {
 		margin-top: 21px;
 		width: 50px;
 		height: 50px;
-		border:1px dashed #fff;
+		/* border:1px dashed #fff; */
 		margin-right: 40px;
 	}
 	.bottomImg div img{
@@ -566,6 +566,9 @@ export default {
 		font-weight: 500;
 		color: #FFFFFF;
 		line-height: 40px;
+	}
+	.ed{
+		color: #fff!important;
 	}
 	
 </style>
