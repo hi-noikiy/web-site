@@ -1,4 +1,4 @@
-#  MatrixETF
+# MatrixETF
 
 ## Project setup
 ```

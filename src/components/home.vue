@@ -26,13 +26,13 @@
 				</div>
 			</div>
 			
-			<div class='MatrixETFText'>
+			<div class='MatrixETFText  animated bounceInDown'>
 				MatrixETF
 			</div>
-			<div class='EnabledText'>
+			<div class='EnabledText animated bounceIn'>
 				The Next Generation of ETF, Cross Chain Enabled
 			</div>
-			<div class=''>
+			<div class='launchBox animated bounceInLeft'>
 				<div class='launch'>
 					Launch APP
 				</div>
@@ -44,8 +44,8 @@
 		</div>
 		<div class='home_page2'>
 			<div class='empty'></div>
-			<div class='MatrixETF_'>What's MatrixETF？</div>
-			<div class='growthText'>
+			<div :class='MatrixETF_'>What's MatrixETF？</div>
+			<div :class='growthText'>
 				MatrixETF is building a Decentralized, automated, personalized, and diversified investment <br>
 				portfolio for you to easily achieve long-term and stable wealth growth.
 			</div>
@@ -53,15 +53,15 @@
 		
 		<div class='home_page4'>
 			<div class='empty4'></div>
-			<div class="page4_title">
+			<div :class="page4_title">
 				MatrixETF Features
 			</div>
 		</div>
 		
 		<div class='home_page5'>
 			<div class='empty5'></div>
-			<div class='fundText'>MatrixETF Fund</div>
-			<div class='growthText'>
+			<div :class='fundText'>MatrixETF Fund</div>
+			<div :class='growthText_'>
 				MatrixETF will Launch Several ETFsdesigned to <br>
 				track the performance of high-quality tokens in <br>
 				the blockchain and DeFi industry.
@@ -70,21 +70,22 @@
 		
 		<div class='home_page6'>
 			<div class='empty6'></div>
-			<div class='featuresText'>
+			<div :class='featuresText'>
 				MDF is a governance token for the MatrixETF community that includes, <br>
 				but is not limited to, the following features
 			</div>
 			<div class='empty6_2'></div>
-			<div class='followsText'>
+			<div :class='followsText_'>
 				The max supply of MDF is 1,000,000,000 <br>
 				and will be distributed as follows
+				
 			</div>
 			<div class='pie'></div>
 		</div>
 		
 		<div class='home_page7'>
 			<div class='empty6'></div>
-			<div class='partners'>Investors & Partners</div>
+			<div :class='partners'>Investors & Partners</div>
 			<div class='Partners_'>
 				<div class='empty_' style="margin-left: 18%;"></div>
 				<div class='empty_'></div>
@@ -92,8 +93,8 @@
 				<div class='empty_'></div>
 				<div class='empty_'></div>
 			</div>
-			<div class='beta'>Join Our Public Beta</div>
-			<div class='nowText'>
+			<div :class='beta'>Join Our Public Beta</div>
+			<div :class='nowText'>
 				Interested in joining our public beta Waiting list？ Apply as a Creator or Ambassador to our first APP now!
 			</div>
 			<div class='APPLYBox'>
@@ -129,7 +130,7 @@
 					<div>
 						<img  src="../img/twitter.png" alt="">
 					</div>
-					<div style='height: 28px;margin-top: 31px;'>
+					<div >
 						<img  src="../img/medium.png" alt="">
 					</div>
 					<div>
@@ -151,11 +152,12 @@
 						<img  src="../img/github.png" alt="">
 					</a> -->
 				</div>
-				<div class='newsletter'>Subscribe to newsletter</div>
+				<div class='newsletter ed'>Subscribe to newsletter</div>
 				<div class='inputBox'>
 					<input class='input_' type="text" placeholder="Email Address">
-					<div class='subscribe'>subscribe</div>
+					
 				</div>
+				<div class='subscribe'>subscribe</div>
 			</div>
 			
 			
@@ -163,20 +165,73 @@
 	</div>
 </template>
 <script>
-
+import '@/css/animate.min.css'
 export default {
 	name: 'home',
 	data() {
 		return {
-			
+			MatrixETF_:'MatrixETF_',
+			growthText:'growthText',
+			page4_title:'page4_title',
+			fundText:'fundText',
+			growthText_:'growthText',
+			featuresText:'featuresText',
+			followsText:'followsText',
+			followsText_:'followsText',
+			partners:'partners',
+			beta:'beta',
+			nowText:'nowText',
+			contentStyleObj:{
+				height: "",
+			}
 		}
 	},
 	methods: {
-		
+		scrollHandle(e){
+			
+			let top = e.srcElement.scrollingElement.scrollTop;
+			
+			if(top>500){
+				this.MatrixETF_ = 'MatrixETF_ animated bounceInLeft'
+				this.growthText = 'growthText animated flipInX'
+			}
+			if(top>1500){
+				this.page4_title = 'page4_title animated rotateInDownRight'
+			}
+			if(top>2700){
+				this.fundText = 'fundText animated bounceInLeft'
+				this.growthText_ = 'growthText animated bounceInLeft'
+			}
+			if(top>3655){
+				this.featuresText = 'featuresText animated rotateInDownLeft'
+			}
+			if(top>4100){
+				this.followsText_ = 'followsText animated rotateInDownRight'
+			}
+			if(top>4855){
+				this.partners = 'partners animated slideInDown'
+			}
+			if(top>5255){
+				this.beta = 'beta animated slideInDown'
+			}
+			if(top>5255){
+				this.nowText = 'nowText animated slideInLeft'
+			}
+			
+			
+			
+			console.log(window.scrollY);
+		}
+	},
+	mounted(){
+		window.addEventListener('scroll',this.scrollHandle)
 	}
 }
 </script>
+
 <style scoped>
+	/* eslint-disable */
+	@import '../css/animate.min.css';
 	.homeBox{
 		width: 100%;
 		height:100%;	
@@ -202,6 +257,7 @@ export default {
 		
 	}
 	.rightMenu ul li{
+		/* font-size: 0.3rem; */
 		float: left;
 		margin-left: 41px;
 	}
@@ -209,10 +265,13 @@ export default {
 	.home_page1{
 		width: 100%;
 		height:100%;
-		background: url(../img/bg.png)no-repeat;
+		/* background: url(../img/bg.png)no-repeat; */
+		background: url(../img/donghua.gif)no-repeat;
 		background-size: 100% 100%;
 	}
+	
 	.MatrixETFText{
+		width: 800px;
 		margin-left: 16%;
 		margin-top: 200px;
 		height: 97px;
@@ -222,8 +281,26 @@ export default {
 		color: #FFFFFF;
 		line-height: 97px;
 		letter-spacing: 3px;
+		/* css3 */
+		/* animation-duration: 2s;
+		animation-name: slidein; */
+	}
+	/* @keyframes slidein {
+		from {
+			margin-left: 100%;
+			width: 300%;
+		}
+		to {
+			margin-left: 16%;
+			width: 100%;
+		}
+	} */
+	.launchBox{
+		width: 800px;
+		margin-left: 16%;
 	}
 	.EnabledText{
+		width: 800px;
 		margin-left: 16%;
 		margin-top: 30px;
 		height: 39px;
@@ -253,7 +330,7 @@ export default {
 	}
 	.launch{
 		float: left;
-		margin-left: 16%;
+		/* margin-left: 16%; */
 		margin-top: 30px;
 		width: 170px;
 		height: 50px;
@@ -293,6 +370,7 @@ export default {
 		height: 226px;
 	}
 	.MatrixETF_{
+		width: 800px;
 		margin-left: 16%;
 		height: 80px;
 		font-size: 60px;
@@ -302,6 +380,7 @@ export default {
 		line-height: 80px;
 	}
 	.growthText{
+		width: 800px;
 		margin-left: 16%;
 		margin-top: 40px;
 		height: 60px;
@@ -322,7 +401,8 @@ export default {
 		height: 91px;
 	}
 	.page4_title{
-		width: 100%;
+		width: 80%;
+		margin-left: 10%;
 		text-align: center;
 		height: 60px;
 		font-size: 60px;
@@ -341,6 +421,7 @@ export default {
 		background-size: 100% 100%;
 	}
 	.fundText{
+		width: 800px;
 		margin-left: 16%;
 		height: 60px;
 		font-size: 60px;
@@ -373,7 +454,8 @@ export default {
 		height: 659px;
 	}
 	.followsText{
-		width: 100%;
+		margin-left: 10%;
+		width: 80%;
 		text-align: center;
 		height: 80px;
 		font-size: 24px;
@@ -457,6 +539,10 @@ export default {
 		font-weight: 500;
 		color: #FFFFFF;
 		line-height: 80px;
+		cursor: pointer;
+	}
+	.APPLY:hover{
+		background: #65B72C!important;
 	}
 	.home_page8{
 		width: 100%;
@@ -488,7 +574,7 @@ export default {
 		height: 100%;
 	}
 	.list_2 div{
-		margin-top: 30px;
+		margin-top: 25px;
 		height: 16px;
 		font-size: 16px;
 		font-family: SourceHanSansCN-Regular, SourceHanSansCN;
@@ -517,10 +603,10 @@ export default {
 	.bottomImg div {
 		float: left;
 		margin-top: 21px;
-		width: 50px;
-		height: 50px;
+		width: 60px;
+		height: 60px;
 		/* border:1px dashed #fff; */
-		margin-right: 40px;
+		margin-right: 25px;
 	}
 	.bottomImg div img{
 		width: 100%;
@@ -535,10 +621,11 @@ export default {
 		font-weight: 400;
 		color: #BFBFBF;
 		line-height: 30px;
-		margin-top: 23px;
+		margin-top: 30px;
 	}
 	.inputBox{
-		margin-top: 39px;
+		margin-top: 30px;
+		
 	}
 	.input_{
 		color: #fff;
@@ -559,16 +646,23 @@ export default {
 		background: linear-gradient(270deg, #8ACE5B 0%, #74C935 100%);
 		text-align: center;
 		float: left;
-		
+		cursor: pointer;
 		
 		font-size: 20px;
 		font-family: SourceHanSansCN-Medium, SourceHanSansCN;
 		font-weight: 500;
 		color: #FFFFFF;
 		line-height: 40px;
+		
 	}
+	
+	.subscribe:hover{
+		background: #65B72C!important;
+	}
+	
 	.ed{
 		color: #fff!important;
+		font-weight: 600!important;
 	}
 	
 </style>

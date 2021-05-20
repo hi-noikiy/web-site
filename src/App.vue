@@ -11,6 +11,14 @@
 
 export default {
 	name: 'App',
+	mounted(){
+		
+		// var html = document.getElementsByTagName("html")[0];
+		// var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+		// html.style.fontSize = oWidth / 1920 * 100 + "px";
+		// console.log('rem:', html.style.fontSize);
+		
+	}
 	
 }
 </script>
@@ -31,8 +39,11 @@ html,body{
   text-align: center;
   color: #2c3e50;
   margin-top: 60px; */
+  
   width: 100%;
   height: 100%;
+ /* overflow-x:hidden;
+  overflow-y:auto; */
   
 }
 </style>
