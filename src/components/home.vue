@@ -1,10 +1,10 @@
 <template>
-	<div class='homeBox'>
+	<div class='container-fluid'>
 		<div class='home_page1'>
-			<div class="row title_top ">
-				<div class="log">
-					<img src="../img/MatrixDao.png" alt="">
-				</div>
+		   	<div class="row title_top ">
+		   		<div class="log">
+		   			<img src="../img/MatrixDao.png" alt="">
+		   		</div>
 				<div class="rightMenu">
 					<ul class="nav nav-pills navWidth">
 						<li role="presentation" class="">
@@ -21,66 +21,106 @@
 						</li>
 						<li role="presentation">
 							<a href=""><span>App</span></a>
+							
 						</li>
 					</ul>
 				</div>
-			</div>
-			
-			<div class='MatrixETFText  animated bounceInDown'>
-				MatrixETF
-			</div>
-			<div class='EnabledText animated bounceIn'>
-				The Next Generation of ETF, Cross Chain Enabled
-			</div>
-			<div class='launchBox animated bounceInLeft'>
-				<div class='launch'>
-					Launch APP
+		   	</div>
+			<div class='row'>
+				<div class="MatrixETFText animated bounceInDown">MatrixETF</div>
+				<div class="col-md-8 EnabledText animated bounceIn">The Next Generation of ETF, Cross Chain Enabled</div>
+				
+				<div class="col-md-8 EnabledText animated bounceInLeft">
+					<div class='launch'>
+						Launch APP
+					</div>
+					<div class='more'>
+						Read More
+						<span>></span>
+					</div>
 				</div>
-				<div class='more'>
-					Read More
-					<span>></span>
-				</div>
+				
 			</div>
 		</div>
+		
 		<div class='home_page2'>
-			<div class='empty'></div>
 			<div :class='MatrixETF_'>What's MatrixETF？</div>
 			<div :class='growthText'>
 				MatrixETF is building a Decentralized, automated, personalized, and diversified investment <br>
 				portfolio for you to easily achieve long-term and stable wealth growth.
 			</div>
+			<div class='row page2_imgBox'>
+				<div :class="page2_imgBox_">
+					<img src="../img/user.png" alt="">
+					<img class='imgMargin' src="../img/etf.png" alt="">
+					<img src="../img/Diversified.png" alt="">
+				</div>
+			</div>
+			
 		</div>
 		
-		<div class='home_page4'>
-			<div class='empty4'></div>
-			<div :class="page4_title">
+		<div class='home_page3'>
+			<div class='empty3'></div>
+			<div :class="page3_title">
 				MatrixETF Features
+			</div>
+			<div class='row'>
+				<div :class="page3ImgBox">
+					<div class='marginTop'>
+						<img class='marginRight' src="../img/icon_1.png" alt="">
+						<img  src="../img/icon4.png" alt="">
+					</div>
+					<div class='marginTop'>
+						<img class='marginRight' src="../img/icon2.png" alt="">
+						<img  src="../img/icon5.png" alt="">
+					</div>
+					
+					<div class='marginTop'>
+						<img class='marginRight' src="../img/icon3.png" alt="">
+						<img  src="../img/icon6.png" alt="">
+					</div>
+					
+				</div>
+				
 			</div>
 		</div>
 		
-		<div class='home_page5'>
-			<div class='empty5'></div>
-			<div :class='fundText'>MatrixETF Fund</div>
+		
+		
+		<div class='home_page4'>
+			<div class='empty4'></div>
+			
+			<div :class="page4_title">
+				MatrixETF Fund
+			</div>
 			<div :class='growthText_'>
 				MatrixETF will Launch Several ETFsdesigned to <br>
 				track the performance of high-quality tokens in <br>
 				the blockchain and DeFi industry.
 			</div>
+			<div :class='page4ImgBox'>
+				<img src="../img/etf1.png" alt="">
+			</div>
+			
 		</div>
 		
-		<div class='home_page6'>
+		<div class='home_page5'>
 			<div class='empty6'></div>
 			<div :class='featuresText'>
 				MDF is a governance token for the MatrixETF community that includes, <br>
 				but is not limited to, the following features
 			</div>
-			<div class='empty6_2'></div>
+			<div :class='empty6_2'>
+				<img src="../img/bg_41.png" alt="">
+			</div>
 			<div :class='followsText_'>
 				The max supply of MDF is 1,000,000,000 <br>
 				and will be distributed as follows
 				
 			</div>
-			<div class='pie'></div>
+			<div :class='pie'>
+				<img src="../img/bingtu.png" alt="">
+			</div>
 		</div>
 		
 		<div class='home_page7'>
@@ -104,63 +144,63 @@
 			</div>
 		</div>
 		
+		
 		<div class='home_page8'>
-			<div class='list_1'>
-				<img src="../img/MatrixDao.png" alt="">
-				<div class='time'>©2020 MatrixETF</div>
-			</div>
-			<div class='list_2'>
-				<div class='ed' style='margin-top: 60px;'>Resources</div>
-				<div>Whitelist</div>
-				<div>Docs</div>
-				<div>Brand suite</div>
-				<div>Privacy Policy</div>
-			</div>
-			
-			<div class='list_2'>
-				<div class='ed' style='margin-top: 60px;'>Token</div>
-				<div>MDF</div>
-				<div>Token contract address</div>
-				<div>Token market value link</div>
-				
-			</div>
-			<div class='list_4'>
-				<div class='contact ed'>Contact Us</div>
-				<div class='bottomImg'>
-					<div>
-						<img  src="../img/twitter.png" alt="">
+					<div class='list_1'>
+						<img src="../img/MatrixDao.png" alt="">
+						<div class='time'>©2020 MatrixETF</div>
 					</div>
-					<div >
-						<img  src="../img/medium.png" alt="">
+					<div class='list_2'>
+						<div class='ed' style='margin-top: 60px;'>Resources</div>
+						<div>Whitelist</div>
+						<div>Docs</div>
+						<div>Brand suite</div>
+						<div>Privacy Policy</div>
 					</div>
-					<div>
-						<img  src="../img/telegram.png" alt="">
-					</div>
-					<div>
-						<img  src="../img/github.png" alt="">
-					</div>
-					<!-- <a href="https://twitter.com/MatrixDao" >
-						<img  src="../img/twitter.png" alt="">
-					</a>
-					<a href="https://medium.com/@MatrixDao" >
-						<img  src="../img/medium.png" alt="">
-					</a>
-					<a href="#">
-						<img  src="../img/telegram.png" alt="">
-					</a>
-					<a href="https://github.com/MatrixDaoFinance" >
-						<img  src="../img/github.png" alt="">
-					</a> -->
-				</div>
-				<div class='newsletter ed'>Subscribe to newsletter</div>
-				<div class='inputBox'>
-					<input class='input_' type="text" placeholder="Email Address">
 					
-				</div>
-				<div class='subscribe'>subscribe</div>
-			</div>
-			
-			
+					<div class='list_2'>
+						<div class='ed' style='margin-top: 60px;'>Token</div>
+						<div>MDF</div>
+						<div>Token contract address</div>
+						<div>Token market value link</div>
+						
+					</div>
+					<div class='list_4'>
+						<div class='contact ed'>Contact Us</div>
+						<div class='bottomImg'>
+							<div>
+								<a href="https://twitter.com/MatrixDao" target="_blank">
+									<img  src="../img/twitter.png" alt="">
+								</a>
+								
+							</div>
+							<div >
+								<a href="https://medium.com/@MatrixDao" target="_blank">
+									<img  src="../img/medium.png" alt="">
+								</a>
+								
+							</div>
+							<div>
+								<a href="https://t.me/MatrixETF" target="_blank">
+									<img  src="../img/telegram.png" alt="">
+								</a>
+								
+							</div>
+							<div>
+								<a href="https://github.com/MatrixDaoFinance" target="_blank">
+									<img  src="../img/github.png" alt="">
+								</a>
+								
+							</div>
+							
+						</div>
+						<div class='newsletter ed'>Subscribe to newsletter</div>
+						<div class='inputBox'>
+							<input class='input_' type="text" placeholder="Email Address">
+							
+						</div>
+						<div class='subscribe'>subscribe</div>
+					</div>
 		</div>
 	</div>
 </template>
@@ -171,16 +211,23 @@ export default {
 	data() {
 		return {
 			MatrixETF_:'MatrixETF_',
+			page2_imgBox_:'col-md-12',
 			growthText:'growthText',
+			page3_title:'page3_title',
+			page3ImgBox:'col-md-12 page3ImgBox',
 			page4_title:'page4_title',
+			page4ImgBox:'page4ImgBox',
 			fundText:'fundText',
-			growthText_:'growthText',
+			growthText_:'growthText_',
 			featuresText:'featuresText',
 			followsText:'followsText',
 			followsText_:'followsText',
 			partners:'partners',
 			beta:'beta',
 			nowText:'nowText',
+			empty6_2:'empty6_2',
+			pie:'pie',
+			
 			contentStyleObj:{
 				height: "",
 			}
@@ -191,19 +238,38 @@ export default {
 			
 			let top = e.srcElement.scrollingElement.scrollTop;
 			
-			if(top>500){
+			if(top>900){
 				this.MatrixETF_ = 'MatrixETF_ animated bounceInLeft'
 				this.growthText = 'growthText animated flipInX'
+				this.page2_imgBox_ = 'col-md-12 animated lightSpeedIn'
+				
 			}
-			if(top>1500){
-				this.page4_title = 'page4_title animated rotateInDownRight'
+			
+			if(top>1800){
+				this.page3_title = 'page3_title animated bounceInLeft'
+				this.page3ImgBox = 'page3ImgBox animated fadeInRightBig'
 			}
-			if(top>2700){
-				this.fundText = 'fundText animated bounceInLeft'
-				this.growthText_ = 'growthText animated bounceInLeft'
+			
+			
+			
+			if(top>2800){
+				this.page4_title = 'page4_title animated bounceIn'
+				this.growthText_ = 'growthText_ animated bounceInLeft'
+				this.page4ImgBox = 'page4ImgBox animated rollIn'
 			}
-			if(top>3655){
+			
+			if(top>4300){
+				this.pie = 'pie animated fadeInUpBig'
+				
+			}
+			
+			// if(top>2700){
+			// 	this.fundText = 'fundText animated bounceInLeft'
+				
+			// }
+			if(top>3700){
 				this.featuresText = 'featuresText animated rotateInDownLeft'
+				this.empty6_2 = 'empty6_2 animated bounceInLeft'
 			}
 			if(top>4100){
 				this.followsText_ = 'followsText animated rotateInDownRight'
@@ -218,8 +284,6 @@ export default {
 				this.nowText = 'nowText animated slideInLeft'
 			}
 			
-			
-			
 			console.log(window.scrollY);
 		}
 	},
@@ -232,10 +296,30 @@ export default {
 <style scoped>
 	/* eslint-disable */
 	@import '../css/animate.min.css';
-	.homeBox{
+	.top30{
+		 top:30px;
+	}
+	.marginLeft70{
+		margin-left: 70px;
+	}
+	.marginRight{
+		margin-right: 70px;
+	}
+	.marginTop{
+		/* margin-top: 60px; */
+	}
+	.container-fluid{
+		padding: 0px;
+		width: 100%;
+		height:100%;
+	}
+	.nav>li>a:focus, .nav>li>a:hover{
+		background-color:transparent;
+	}
+	/* .homeBox{
 		width: 100%;
 		height:100%;	
-	}
+	} */
 	a{ text-decoration:none} 
 	.row{
 		width: 100%;
@@ -269,9 +353,14 @@ export default {
 		background: url(../img/donghua.gif)no-repeat;
 		background-size: 100% 100%;
 	}
-	
+	.MatrixETFTextBox{
+		position: relative;
+		
+	}
 	.MatrixETFText{
-		width: 800px;
+		/* width: 800px;
+		margin-left: 16%; */
+		
 		margin-left: 16%;
 		margin-top: 200px;
 		height: 97px;
@@ -281,26 +370,15 @@ export default {
 		color: #FFFFFF;
 		line-height: 97px;
 		letter-spacing: 3px;
-		/* css3 */
-		/* animation-duration: 2s;
-		animation-name: slidein; */
+		
 	}
-	/* @keyframes slidein {
-		from {
-			margin-left: 100%;
-			width: 300%;
-		}
-		to {
-			margin-left: 16%;
-			width: 100%;
-		}
-	} */
+	
 	.launchBox{
 		width: 800px;
 		margin-left: 16%;
 	}
 	.EnabledText{
-		width: 800px;
+		
 		margin-left: 16%;
 		margin-top: 30px;
 		height: 39px;
@@ -342,7 +420,10 @@ export default {
 		color: #FFFFFF;
 		line-height: 50px;
 		text-align: center;
-		
+		cursor: pointer;
+	}
+	.launch:hover{
+		background:#65B72C;
 	}
 	.more{
 		float: left;
@@ -354,6 +435,7 @@ export default {
 		color: #FFFFFF;
 		line-height: 50px;
 		margin-left: 40px;
+		cursor: pointer;
 	}
 	.more span{
 		color: #8ACE5B;
@@ -361,17 +443,36 @@ export default {
 	
 	
 	.home_page2{
+		position: relative;
 		width: 100%;
 		height:100%;
 		background: url(../img/bg3.png)no-repeat;
 		background-size: 100% 100%;
+		overflow-x:hidden;
+	}
+	.imgMargin{
+		margin: 0px 50px;
+	}
+	.page2_imgBox{
+		position: absolute;
+		padding-left:16%;
+		top: 43%;
 	}
 	.empty{
 		height: 226px;
 	}
+	.MatrixETF_Box{
+		position: absolute;
+		width: 100%;
+		height: 700px;
+	}
+	.MatrixETF_BoxText{
+		height: 200px;
+	}
 	.MatrixETF_{
-		width: 800px;
-		margin-left: 16%;
+		position: absolute;
+		top: 23%;
+		left: 16%;
 		height: 80px;
 		font-size: 60px;
 		font-family: SourceHanSansCN-Medium, SourceHanSansCN;
@@ -380,9 +481,20 @@ export default {
 		line-height: 80px;
 	}
 	.growthText{
-		width: 800px;
-		margin-left: 16%;
-		margin-top: 40px;
+		position: absolute;
+		left: 16%;
+		top:34%;
+		height: 60px;
+		font-size: 18px;
+		font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+		font-weight: 500;
+		color: #BFBFBF;
+		line-height: 30px;
+	}
+	.growthText_{
+		position: absolute;
+		left: 16%;
+		top:44%;
 		height: 60px;
 		font-size: 18px;
 		font-family: SourceHanSansCN-Medium, SourceHanSansCN;
@@ -391,19 +503,56 @@ export default {
 		line-height: 30px;
 	}
 	
-	.home_page4{
+	.home_page3{
+		position: relative;
 		width: 100%;
 		height:100%;
-		background: url(../img/bg_yuan1.png)no-repeat;
+		background: url(../img/bg_yuan.png)no-repeat;
 		background-size: 100% 100%;
+		overflow-x:hidden;
+	}
+	.marginTop img{
+		margin-top: 60px;
+	}
+	.page3ImgBox{
+		padding-left: 16%;
+		margin-top: 100px;
+	}
+	.empty3{
+		height: 100px;
+	}
+	.page3_title{
+		width: 80%;
+		margin-left: 10%;
+		text-align: center;
+		height: 60px;
+		font-size: 60px;
+		font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+		font-weight: 500;
+		color: #FFFFFF;
+		line-height: 90px;
+	}
+	.home_page4{
+		position: relative;
+		width: 100%;
+		height:100%;
+		background: url(../img/zhanshi.png)no-repeat;
+		/* background: url(../img/zhanshi1.png)no-repeat; */
+		background-size: 100% 100%;
+		overflow-x:hidden;
 	}
 	.empty4{
 		height: 91px;
 	}
+	.page4ImgBox{
+		position: absolute;
+		right: 10%;
+	}
 	.page4_title{
-		width: 80%;
-		margin-left: 10%;
-		text-align: center;
+		position: relative;
+		left: 16%;
+		top: 21%;
+		
 		height: 60px;
 		font-size: 60px;
 		font-family: SourceHanSansCN-Medium, SourceHanSansCN;
@@ -416,8 +565,8 @@ export default {
 	}
 	.home_page5{
 		width: 100%;
-		height:100%;
-		background: url(../img/zhanshi.png)no-repeat;
+		height:150%;
+		background: url(../img/bg_4.png)no-repeat;
 		background-size: 100% 100%;
 	}
 	.fundText{
@@ -451,7 +600,9 @@ export default {
 		line-height: 40px;
 	}
 	.empty6_2{
-		height: 659px;
+		/* height: 659px; */
+		margin: 74px 0px;
+		text-align: center;
 	}
 	.followsText{
 		margin-left: 10%;
@@ -467,11 +618,11 @@ export default {
 	.pie{
 		
 		margin: 0 auto;
-		margin-top: 80px;
+		margin-top: 50px;
 		width: 709px;
 		height:413px;
-		background: url(../img/bingtu.png)no-repeat;
-		background-size: 100% 100%;
+		/* background: url(../img/bingtu.png)no-repeat;
+		background-size: 100% 100%; */
 	}
 	.home_page7{
 		width: 100%;
