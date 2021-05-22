@@ -44,18 +44,21 @@
 		</div>
 		
 		<div class='home_page2'>
-			<div :class='MatrixETF_'>What's MatrixETF？</div>
-			<div :class='growthText'>
-				MatrixETF is building a Decentralized, automated, personalized, and diversified investment <br>
-				portfolio for you to easily achieve long-term and stable wealth growth.
-			</div>
-			<div class='row page2_imgBox'>
-				<div :class="page2_imgBox_">
-					<img src="../img/user.png" alt="">
-					<img class='imgMargin' src="../img/etf.png" alt="">
-					<img src="../img/Diversified.png" alt="">
+			<div :class='show'>
+				<div :class='MatrixETF_'>What's MatrixETF？</div>
+				<div :class='growthText'>
+					MatrixETF is building a Decentralized, automated, personalized, and diversified investment <br>
+					portfolio for you to easily achieve long-term and stable wealth growth.
+				</div>
+				<div class='row page2_imgBox'>
+					<div :class="page2_imgBox_">
+						<img src="../img/user.png" alt="">
+						<img class='imgMargin' src="../img/etf.png" alt="">
+						<img src="../img/Diversified.png" alt="">
+					</div>
 				</div>
 			</div>
+			
 			
 		</div>
 		
@@ -169,25 +172,22 @@
 						<div class='contact ed'>Contact Us</div>
 						<div class='bottomImg'>
 							<div>
-								<a href="https://twitter.com/MatrixDao" target="_blank">
+								<a href="https://twitter.com/MatrixETF" target="_blank">
 									<img  src="../img/twitter.png" alt="">
 								</a>
-								
 							</div>
 							<div >
-								<a href="https://medium.com/@MatrixDao" target="_blank">
+								<a href="https://medium.com/@MatrixETF" target="_blank">
 									<img  src="../img/medium.png" alt="">
 								</a>
-								
 							</div>
 							<div>
 								<a href="https://t.me/MatrixETF" target="_blank">
 									<img  src="../img/telegram.png" alt="">
 								</a>
-								
 							</div>
 							<div>
-								<a href="https://github.com/MatrixDaoFinance" target="_blank">
+								<a href="https://github.com/MatrixETF" target="_blank">
 									<img  src="../img/github.png" alt="">
 								</a>
 								
@@ -210,23 +210,24 @@ export default {
 	name: 'home',
 	data() {
 		return {
-			MatrixETF_:'MatrixETF_',
-			page2_imgBox_:'col-md-12',
-			growthText:'growthText',
-			page3_title:'page3_title',
-			page3ImgBox:'col-md-12 page3ImgBox',
-			page4_title:'page4_title',
-			page4ImgBox:'page4ImgBox',
-			fundText:'fundText',
-			growthText_:'growthText_',
-			featuresText:'featuresText',
-			followsText:'followsText',
-			followsText_:'followsText',
-			partners:'partners',
-			beta:'beta',
-			nowText:'nowText',
-			empty6_2:'empty6_2',
-			pie:'pie',
+			MatrixETF_:'hide',
+			page2_imgBox_:'hide',
+			growthText:'hide',
+			page3_title:'hide',
+			page3ImgBox:'hide',
+			page4_title:'hide',
+			page4ImgBox:'hide',
+			fundText:'hide',
+			growthText_:'hide',
+			featuresText:'hide',
+			followsText:'hide',
+			followsText_:'hide',
+			partners:'hide',
+			beta:'hide',
+			nowText:'hide',
+			empty6_2:'hide',
+			pie:'hide',
+			show:'',
 			
 			contentStyleObj:{
 				height: "",
@@ -237,8 +238,8 @@ export default {
 		scrollHandle(e){
 			
 			let top = e.srcElement.scrollingElement.scrollTop;
-			
-			if(top>900){
+			console.log(top);
+			if(top>500){
 				this.MatrixETF_ = 'MatrixETF_ animated bounceInLeft'
 				this.growthText = 'growthText animated flipInX'
 				this.page2_imgBox_ = 'col-md-12 animated lightSpeedIn'
@@ -284,7 +285,7 @@ export default {
 				this.nowText = 'nowText animated slideInLeft'
 			}
 			
-			console.log(window.scrollY);
+			
 		}
 	},
 	mounted(){
@@ -296,6 +297,9 @@ export default {
 <style scoped>
 	/* eslint-disable */
 	@import '../css/animate.min.css';
+	.hide{
+		display: none;
+	}
 	.top30{
 		 top:30px;
 	}
@@ -562,12 +566,14 @@ export default {
 	}
 	.empty5{
 		height: 300px;
+		overflow-x:hidden;
 	}
 	.home_page5{
 		width: 100%;
 		height:150%;
 		background: url(../img/bg_4.png)no-repeat;
 		background-size: 100% 100%;
+		overflow-x:hidden;
 	}
 	.fundText{
 		width: 800px;
@@ -585,6 +591,7 @@ export default {
 		height:150%;
 		background: url(../img/bg_4.png)no-repeat;
 		background-size: 100% 100%;
+		overflow-x:hidden;
 	}
 	.empty6{
 		height: 100px;
