@@ -13,9 +13,9 @@
 						<li role="presentation">
 							<a href=""><span>Docs</span></a>
 						</li>
-						<li role="presentation">
+						<!-- <li role="presentation">
 							<a href="https://docsend.com/view/ditsqzm7uciumw6a" target="_blank"><span>Whitepaper</span></a>
-						</li>
+						</li> -->
 						<li role="presentation">
 							<a href=""><span>Blog</span></a>
 						</li>
@@ -69,19 +69,29 @@
 			</div>
 			<div class='row'>
 				<div :class="page3ImgBox">
-					<div class='marginTop'>
+					<div class="col-md-6 marginTop">
 						<img class='marginRight' src="../img/icon_1.png" alt="">
+					</div>
+					<div class="col-md-6 marginTop">
 						<img  src="../img/icon4.png" alt="">
 					</div>
-					<div class='marginTop'>
+					
+					<div class="col-md-6 marginTop" style="height: 206px;">
 						<img class='marginRight' src="../img/icon2.png" alt="">
+					</div>
+					<div class="col-md-6 marginTop">
 						<img  src="../img/icon5.png" alt="">
 					</div>
 					
-					<div class='marginTop'>
+					<div class="col-md-6 marginTop">
 						<img class='marginRight' src="../img/icon3.png" alt="">
+					</div>
+					<div class="col-md-6 marginTop">
 						<img  src="../img/icon6.png" alt="">
 					</div>
+					
+					
+					
 					
 				</div>
 				
@@ -136,8 +146,8 @@
 				<div class='empty_'></div>
 				<div class='empty_'></div>
 			</div>
-			<div :class='beta'>Join Our Public Beta</div>
-			<div :class='nowText'>
+			<div class='beta'>Join Our Public Beta</div>
+			<div class='nowText'>
 				Interested in joining our public beta Waiting list？ Apply as a Creator or Ambassador to our first APP now!
 			</div>
 			<div class='APPLYBox'>
@@ -246,21 +256,23 @@ export default {
 				
 			}
 			
-			if(top>1800){
+			if(top>1400){
 				this.page3_title = 'page3_title animated bounceInLeft'
 				this.page3ImgBox = 'page3ImgBox animated fadeInRightBig'
 			}
 			
 			
 			
-			if(top>2800){
+			if(top>2400){
 				this.page4_title = 'page4_title animated bounceIn'
 				this.growthText_ = 'growthText_ animated bounceInLeft'
 				this.page4ImgBox = 'page4ImgBox animated rollIn'
 			}
 			
-			if(top>4300){
-				this.pie = 'pie animated fadeInUpBig'
+			if(top>3400){
+				this.featuresText = 'featuresText animated rotateInDownLeft'
+				this.empty6_2 = 'empty6_2 animated bounceInLeft'
+				
 				
 			}
 			
@@ -268,21 +280,21 @@ export default {
 			// 	this.fundText = 'fundText animated bounceInLeft'
 				
 			// }
-			if(top>3700){
-				this.featuresText = 'featuresText animated rotateInDownLeft'
-				this.empty6_2 = 'empty6_2 animated bounceInLeft'
-			}
+			// if(top>3700){
+				
+			// }
 			if(top>4100){
 				this.followsText_ = 'followsText animated rotateInDownRight'
+				this.pie = 'pie animated fadeInUpBig'
 			}
 			if(top>4855){
 				this.partners = 'partners animated slideInDown'
 			}
 			if(top>5255){
-				this.beta = 'beta animated slideInDown'
+				//this.beta = 'beta animated slideInDown'
 			}
 			if(top>5255){
-				this.nowText = 'nowText animated slideInLeft'
+				//this.nowText = 'nowText animated slideInLeft'
 			}
 			
 			
@@ -543,7 +555,7 @@ export default {
 		background: url(../img/zhanshi.png)no-repeat;
 		/* background: url(../img/zhanshi1.png)no-repeat; */
 		background-size: 100% 100%;
-		overflow-x:hidden;
+		overflow:hidden;
 	}
 	.empty4{
 		height: 91px;
@@ -573,7 +585,7 @@ export default {
 		height:150%;
 		background: url(../img/bg_4.png)no-repeat;
 		background-size: 100% 100%;
-		overflow-x:hidden;
+		overflow:hidden;
 	}
 	.fundText{
 		width: 800px;
