@@ -17,10 +17,10 @@
 							<a href="https://docsend.com/view/ditsqzm7uciumw6a" target="_blank"><span>Whitepaper</span></a>
 						</li> -->
 						<li role="presentation">
-							<a href=""><span>Blog</span></a>
+							<a href="" ><span>Blog</span></a>
 						</li>
 						<li role="presentation">
-							<a href=""><span>App</span></a>
+							<a @click='App'><span>App</span></a>
 							
 						</li>
 					</ul>
@@ -245,6 +245,9 @@ export default {
 		}
 	},
 	methods: {
+		App(){
+			this.$router.push({path:'/ETFs'})
+		},
 		scrollHandle(e){
 			
 			let top = e.srcElement.scrollingElement.scrollTop;
