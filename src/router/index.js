@@ -13,6 +13,22 @@ export default new Router({
 				require(['@/components/home'], resolve);
 			}
 			
-		}
+		},
+		{
+			path: '/ETFs',
+			name: 'ETFs',
+			component: resolve => {
+				require(['@/components/ETFs'], resolve);
+			}
+			
+		},
+		{
+			path: '/details_ETFs',
+			name: 'details_ETFs',
+			component: resolve => {
+				require(['@/components/details_ETFs'], resolve);
+			}
+			
+		},
 	]
 })
