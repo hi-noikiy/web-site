@@ -211,7 +211,7 @@
 			}
 		},
 		mounted(){
-			this.mask()
+			//this.mask()
 		}
 	}
 </script>
