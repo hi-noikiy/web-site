@@ -16,6 +16,7 @@ import './assets/bootstrap-3.4.1-dist/js/bootstrap.js'
 Vue.prototype.Web3 = Web3
 Vue.config.productionTip = false
 
+
 new Vue({
 	router,
 	render: h => h(App),
