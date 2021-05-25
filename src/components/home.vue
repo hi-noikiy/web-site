@@ -22,19 +22,32 @@
     <div class="home_page1 container-fluid">
       <div class="container">
         <div class="row">
-          <div class="wow MatrixETFText bounceInDown">MatrixETF</div>
-          <div class="wow EnabledText bounceIn">
+          <div
+            class="col-xs-12 wow MatrixETFText bounceInDown"
+            data-wow-offset="10"
+            data-wow-iteration="1"
+          >
+            MatrixETF
+          </div>
+          <div
+            class="col-xs-12 wow EnabledText bounceIn"
+            data-wow-offset="10"
+            data-wow-iteration="1"
+          >
             The Next Generation of ETF, Cross Chain Enabled
           </div>
-
-          <div class="wow EnabledText bounceInLeft">
-            <div class="launch">
-              Launch APP
-            </div>
-            <div class="more">
-              Read More
-              <span>></span>
-            </div>
+        </div>
+        <div
+          class="row wow EnabledText bounceInLeft"
+          data-wow-offset="10"
+          data-wow-iteration="1"
+        >
+          <div class="col-xs-8 col-sm-3 col-md-2 col-lg-2">
+            <div class="launch">Launch APP</div>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 more">
+            Read More
+            <span>></span>
           </div>
         </div>
       </div>
@@ -44,14 +57,16 @@
       <div class="container">
         <div class="row">
           <div
-            class="MatrixETF_ wow bounceInLeft"
+            class="col-xs-12 MatrixETF_ wow bounceInLeft"
             data-wow-offset="10"
             data-wow-iteration="1"
           >
             What's MatrixETF？
           </div>
+        </div>
+        <div class="row">
           <div
-            class="growthText wow flipInX"
+            class="col-xs-12 growthText wow flipInX"
             data-wow-offset="10"
             data-wow-iteration="1"
           >
@@ -60,135 +75,176 @@
             portfolio for you to easily achieve long-term and stable wealth
             growth.
           </div>
-          <div class="page2_imgBox">
-            <div
-              class="page2_imgBox_ wow lightSpeedIn"
+        </div>
+        <div class="row page2_imgBox">
+          <div class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
+            <img
+              class="wow lightSpeedIn"
               data-wow-offset="10"
               data-wow-iteration="1"
-            >
-              <img src="../img/user.png" alt="" />
-              <img class="imgMargin" src="../img/etf.png" alt="" />
-              <img src="../img/Diversified.png" alt="" />
-            </div>
+              src="../img/user.png"
+              alt=""
+            />
+          </div>
+          <div class="col-xs-12 col-sm-7 col-md-5 col-lg-5">
+            <img
+              class="wow lightSpeedIn"
+              data-wow-offset="20"
+              data-wow-iteration="1"
+              src="../img/etf.png"
+              alt=""
+            />
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img
+              class="wow lightSpeedIn"
+              data-wow-offset="30"
+              data-wow-iteration="1"
+              src="../img/Diversified.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="home_page3 col-xs-12">
-      <div class="empty3"></div>
-      <div
-        class="page3_title wow bounceInLeft"
-        data-wow-offset="10"
-        data-wow-iteration="1"
-      >
-        MatrixETF Features
-      </div>
-      <div class="row">
+    <div class="home_page3 container-fluid">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-xs-12 page3_title wow bounceInLeft"
+            data-wow-offset="10"
+            data-wow-iteration="1"
+          >
+            MatrixETF Features
+          </div>
+        </div>
         <div
-          class="page3ImgBox wow fadeInRightBig"
+          class="row marginTop text-center wow fadeInRightBig"
           data-wow-offset="10"
           data-wow-iteration="1"
         >
-          <div class="col-md-6 marginTop">
-            <img class="marginRight" src="../img/icon_1.png" alt="" />
+          <div class="col-xs-12 col-md-6 col-lg-6">
+            <img src="../img/icon_1.png" alt="" />
           </div>
-          <div class="col-md-6 marginTop">
+          <div class="col-xs-12 col-md-6 col-lg-6">
             <img src="../img/icon4.png" alt="" />
           </div>
-
-          <div class="col-md-6 marginTop" style="height: 206px;">
-            <img class="marginRight" src="../img/icon2.png" alt="" />
+        </div>
+        <div
+          class="row marginTop text-center wow fadeInRightBig"
+          data-wow-offset="10"
+          data-wow-iteration="1"
+        >
+          <div class="col-xs-12 col-md-6 col-lg-6">
+            <img src="../img/icon2.png" alt="" />
           </div>
-          <div class="col-md-6 marginTop">
+          <div class="col-xs-12 col-md-6 col-lg-6">
             <img src="../img/icon5.png" alt="" />
           </div>
-
-          <div class="col-md-6 marginTop">
-            <img class="marginRight" src="../img/icon3.png" alt="" />
+        </div>
+        <div
+          class="row marginTop text-center wow fadeInRightBig"
+          data-wow-offset="10"
+          data-wow-iteration="1"
+        >
+          <div class="col-xs-12 col-md-6 col-lg-6">
+            <img src="../img/icon3.png" alt="" />
           </div>
-          <div class="col-md-6 marginTop">
+          <div class="col-xs-12 col-md-6 col-lg-6">
             <img src="../img/icon6.png" alt="" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="home_page4 col-xs-12">
-      <div class="empty4"></div>
+    <div class="home_page4 col-xs-12 container-fluid">
+      <div class="container">
+        <div
+          class="row wow bounceIn"
+          data-wow-offset="10"
+          data-wow-iteration="1"
+        >
+          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <p class="page4_title">MatrixETF Fund</p>
 
-      <div
-        class="page4_title wow bounceIn"
-        data-wow-offset="10"
-        data-wow-iteration="1"
-      >
-        MatrixETF Fund
-      </div>
-      <div class="wow bounceInLeft" data-wow-offset="10" data-wow-iteration="1">
-        MatrixETF will Launch Several ETFsdesigned to <br />
-        track the performance of high-quality tokens in <br />
-        the blockchain and DeFi industry.
-      </div>
-      <div
-        class="page4ImgBox wow rollIn"
-        data-wow-offset="10"
-        data-wow-iteration="1"
-      >
-        <img src="../img/etf1.png" alt="" />
+            <p class="growthText_">
+              MatrixETF will Launch Several ETFsdesigned to <br />
+              track the performance of high-quality tokens in <br />
+              the blockchain and DeFi industry.
+            </p>
+          </div>
+          <div
+            class="col-xs-12 col-sm-12 col-md-7 col-lg-7 wow rollIn"
+            data-wow-offset="10"
+            data-wow-iteration="1"
+          >
+            <img src="../img/etf1.png" alt="" />
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="home_page5 col-xs-12">
-      <div class="empty6"></div>
-      <div
-        class="featuresText wow rotateInDownLeft"
-        data-wow-offset="10"
-        data-wow-iteration="1"
-      >
-        MDF is a governance token for the MatrixETF community that includes,
-        <br />
-        but is not limited to, the following features
-      </div>
-      <div
-        class="empty6_2 wow bounceInLeft"
-        data-wow-offset="10"
-        data-wow-iteration="1"
-      >
-        <img src="../img/bg_41.png" alt="" />
-      </div>
-      <div
-        class="followsText_ wow rotateInDownRight"
-        data-wow-offset="10"
-        data-wow-iteration="1"
-      >
-        The max supply of MDF is 1,000,000,000 <br />
-        and will be distributed as follows
-      </div>
-      <div
-        class="pie wow fadeInUpBig"
-        data-wow-offset="10"
-        data-wow-iteration="1"
-      >
-        <img src="../img/bingtu.png" alt="" />
+    <div class="home_page5 container-fluid">
+      <div class="container">
+        <div
+          class="row wow rotateInDownLeft"
+          data-wow-offset="10"
+          data-wow-iteration="1"
+        >
+          <p class="col-lg-12 featuresText">
+            MDF is a governance token for the MatrixETF community that includes,
+            <br />
+            but is not limited to, the following features
+          </p>
+        </div>
+        <div
+          class="row wow bounceInLeft text-center"
+          data-wow-offset="10"
+          data-wow-iteration="1"
+        >
+          <img src="../img/bg_41.png" alt="" />
+        </div>
+
+        <div
+          class="row wow rotateInDownRight"
+          data-wow-offset="10"
+          data-wow-iteration="1"
+        >
+          <p class="followsText">
+            The max supply of MDF is 1,000,000,000 <br />
+            and will be distributed as follows
+          </p>
+        </div>
+        <div
+          class="row wow fadeInUpBig text-center"
+          data-wow-offset="10"
+          data-wow-iteration="1"
+        >
+          <img src="../img/bingtu.png" alt="" />
+        </div>
       </div>
     </div>
 
-    <div class="home_page7 col-xs-12">
-      <div class="empty6"></div>
-      <div
-        class="partners wow slideInDown"
-        data-wow-offset="10"
-        data-wow-iteration="1"
-      >
-        Investors & Partners
+    <div class="home_page7 container-fluid">
+      <div class="container">
+        <div
+          class="row wow slideInDown"
+          data-wow-offset="10"
+          data-wow-iteration="1"
+        >
+          <p class="partners">Investors & Partners</p>
+        </div>
+
+        <div class="Partners_ row">
+          <div class="empty_ hidden-xs"></div>
+          <div class="empty_ hidden-xs"></div>
+          <div class="empty_ hidden-xs"></div>
+          <div class="empty_"></div>
+          <div class="empty_"></div>
+        </div>
       </div>
-      <div class="Partners_">
-        <div class="empty_" style="margin-left: 18%;"></div>
-        <div class="empty_"></div>
-        <div class="empty_"></div>
-        <div class="empty_"></div>
-        <div class="empty_"></div>
-      </div>
+
       <div class="beta">Join Our Public Beta</div>
       <div class="nowText">
         Interested in joining our public beta Waiting list？ Apply as a Creator
@@ -201,54 +257,56 @@
       </div>
     </div>
 
-    <div class="home_page8 col-xs-12">
-      <div class="list_1">
-        <img src="../img/MatrixDao.png" alt="" />
-        <div class="time">©2020 MatrixETF</div>
-      </div>
-      <div class="list_2">
-        <div class="ed" style="margin-top: 60px;">Resources</div>
-        <div>Whitelist</div>
-        <div>Docs</div>
-        <div>Brand suite</div>
-        <div>Privacy Policy</div>
-      </div>
-
-      <div class="list_2">
-        <div class="ed" style="margin-top: 60px;">Token</div>
-        <div>MDF</div>
-        <div>Token contract address</div>
-        <div>Token market value link</div>
-      </div>
-      <div class="list_4">
-        <div class="contact ed">Contact Us</div>
-        <div class="bottomImg">
-          <div>
-            <a href="https://twitter.com/MatrixETF" target="_blank">
-              <img src="../img/twitter.png" alt="" />
-            </a>
-          </div>
-          <div>
-            <a href="https://medium.com/@MatrixETF" target="_blank">
-              <img src="../img/medium.png" alt="" />
-            </a>
-          </div>
-          <div>
-            <a href="https://t.me/MatrixETF" target="_blank">
-              <img src="../img/telegram.png" alt="" />
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/MatrixETF" target="_blank">
-              <img src="../img/github.png" alt="" />
-            </a>
-          </div>
+    <div class="home_page8 container-fluid hidden-xs">
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="list_1 col-sm-3">
+          <img src="../img/MatrixDao.png" alt="" />
+          <div class="time">©2020 MatrixETF</div>
         </div>
-        <div class="newsletter ed">Subscribe to newsletter</div>
-        <div class="inputBox">
-          <input class="input_" type="text" placeholder="Email Address" />
+        <div class="list_2 col-sm-2">
+          <div class="ed">Resources</div>
+          <div>Whitelist</div>
+          <div>Docs</div>
+          <div>Brand suite</div>
+          <div>Privacy Policy</div>
         </div>
-        <div class="subscribe">subscribe</div>
+        <div class="list_2 col-sm-2">
+          <div class="ed">Token</div>
+          <div>MDF</div>
+          <div>Token contract address</div>
+          <div>Token market value link</div>
+        </div>
+        <div class="list_4 col-sm-4">
+          <div class="contact ed">Contact Us</div>
+          <div class="bottomImg">
+            <div>
+              <a href="https://twitter.com/MatrixETF" target="_blank">
+                <img src="../img/twitter.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="https://medium.com/@MatrixETF" target="_blank">
+                <img src="../img/medium.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="https://t.me/MatrixETF" target="_blank">
+                <img src="../img/telegram.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/MatrixETF" target="_blank">
+                <img src="../img/github.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="newsletter ed">Subscribe to newsletter</div>
+          <div class="inputBox">
+            <input class="input_" type="text" placeholder="Email Address" />
+          </div>
+          <div class="subscribe">subscribe</div>
+        </div>
       </div>
     </div>
   </div>
@@ -276,7 +334,7 @@ export default {
         // the callback is fired every time an animation is started
         // the argument that is passed in is the DOM node being animated
       },
-      scrollContainer: "#page" // optional scroll container selector, otherwise use window
+      scrollContainer: null // optional scroll container selector, otherwise use window
     });
     wow.init();
   }
@@ -306,7 +364,6 @@ export default {
 }
 .page {
   width: 100%;
-  height: 100%;
   overflow: auto;
 }
 .page > div {
@@ -358,10 +415,12 @@ a {
 
 .home_page1 {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   /* background: url(../img/bg.png)no-repeat; */
   background: url(../img/donghua.gif) no-repeat;
   background-size: 100% 100%;
+  display: flex;
+  align-items: center;
 }
 .MatrixETFTextBox {
   position: relative;
@@ -370,8 +429,6 @@ a {
   /* width: 800px;
 		margin-left: 16%; */
 
-  margin-top: 278px;
-  height: 97px;
   font-size: 80px;
   font-family: Montserrat-Bold, Montserrat;
   font-weight: bold;
@@ -380,18 +437,27 @@ a {
   letter-spacing: 3px;
 }
 
-.launchBox {
-  width: 800px;
-  margin-left: 16%;
-}
 .EnabledText {
   margin-top: 30px;
-  height: 39px;
   font-size: 32px;
   font-family: Montserrat-Regular, Montserrat;
   font-weight: 400;
   color: #ffffff;
   line-height: 39px;
+}
+@media (max-width: 768px) {
+  .MatrixETFText {
+    font-size: 60px;
+  }
+  .EnabledText {
+    margin-top: 15px;
+    font-size: 30px;
+  }
+}
+
+.launchBox {
+  width: 800px;
+  margin-left: 16%;
 }
 .floatLeft {
   float: left;
@@ -412,11 +478,8 @@ a:hover {
   color: #fff;
 }
 .launch {
-  float: left;
+  width: 100%;
   /* margin-left: 16%; */
-  margin-top: 30px;
-  width: 170px;
-  height: 50px;
   background: linear-gradient(270deg, #8ace5b 0%, #74c935 100%);
   border-radius: 6px;
   font-size: 20px;
@@ -432,14 +495,11 @@ a:hover {
 }
 .more {
   float: left;
-  margin-top: 30px;
-  height: 50px;
   font-size: 20px;
   font-family: Montserrat-Regular, Montserrat;
   font-weight: 400;
   color: #ffffff;
   line-height: 50px;
-  margin-left: 40px;
   cursor: pointer;
 }
 .more span {
@@ -449,25 +509,31 @@ a:hover {
 .home_page2 {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background: url(../img/bg3.png) no-repeat;
   background-size: 100% 100%;
   overflow-x: hidden;
+  display: flex;
+  align-items: center;
 }
 .imgMargin {
   margin: 0px 50px;
 }
 .page2_imgBox {
-  position: absolute;
-  padding-left: 16%;
-  top: 43%;
+  margin-top: 20px;
+}
+.page2_imgBox > div {
+}
+.page2_imgBox img {
+  max-width: 100%;
+  height: 250px;
+  margin-top: 20px;
 }
 .empty {
   height: 226px;
 }
 .MatrixETF_ {
   margin-top: 25px;
-  height: 80px;
   font-size: 60px;
   font-family: SourceHanSansCN-Medium, SourceHanSansCN;
   font-weight: 500;
@@ -476,7 +542,6 @@ a:hover {
 }
 .growthText {
   margin-top: 10px;
-  height: 60px;
   font-size: 18px;
   font-family: SourceHanSansCN-Medium, SourceHanSansCN;
   font-weight: 500;
@@ -484,10 +549,7 @@ a:hover {
   line-height: 30px;
 }
 .growthText_ {
-  position: absolute;
-  left: 16%;
-  top: 44%;
-  height: 60px;
+  margin-top: 20px;
   font-size: 18px;
   font-family: SourceHanSansCN-Medium, SourceHanSansCN;
   font-weight: 500;
@@ -498,26 +560,25 @@ a:hover {
 .home_page3 {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background: url(../img/bg_yuan.png) no-repeat;
   background-size: 100% 100%;
   overflow-x: hidden;
+  display: flex;
+  align-items: center;
 }
 .marginTop img {
+  max-width: 100%;
   margin-top: 60px;
 }
 .page3ImgBox {
-  padding-left: 16%;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 .empty3 {
   height: 100px;
 }
 .page3_title {
-  width: 80%;
-  margin-left: 10%;
   text-align: center;
-  height: 60px;
   font-size: 60px;
   font-family: SourceHanSansCN-Medium, SourceHanSansCN;
   font-weight: 500;
@@ -527,26 +588,23 @@ a:hover {
 .home_page4 {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background: url(../img/zhanshi.png) no-repeat;
   /* background: url(../img/zhanshi1.png)no-repeat; */
   background-size: 100% 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
-.empty4 {
-  height: 91px;
+.home_page4 img {
+  max-width: 100%;
 }
 .page4ImgBox {
   position: absolute;
   right: 10%;
 }
 .page4_title {
-  position: relative;
-  left: 16%;
-  top: 21%;
-
-  height: 60px;
-  font-size: 60px;
+  font-size: 50px;
   font-family: SourceHanSansCN-Medium, SourceHanSansCN;
   font-weight: 500;
   color: #ffffff;
@@ -558,10 +616,15 @@ a:hover {
 }
 .home_page5 {
   width: 100%;
-  height: 150%;
+  min-height: 100vh;
   background: url(../img/bg_4.png) no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.home_page5 img {
+  max-width: 100%;
 }
 .fundText {
   width: 800px;
@@ -585,9 +648,8 @@ a:hover {
   height: 100px;
 }
 .featuresText {
-  width: 100%;
+  margin: 30px 0;
   text-align: center;
-  height: 80px;
   font-size: 24px;
   font-family: SourceHanSansCN-Medium, SourceHanSansCN;
   font-weight: 500;
@@ -600,10 +662,8 @@ a:hover {
   text-align: center;
 }
 .followsText {
-  margin-left: 10%;
-  width: 80%;
+  margin: 30px 0;
   text-align: center;
-  height: 80px;
   font-size: 24px;
   font-family: SourceHanSansCN-Medium, SourceHanSansCN;
   font-weight: 500;
@@ -620,13 +680,16 @@ a:hover {
 }
 .home_page7 {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background: #121315;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 150px;
 }
 .partners {
   width: 100%;
   text-align: center;
-  height: 60px;
   font-size: 40px;
   font-family: SourceHanSansCN-Medium, SourceHanSansCN;
   font-weight: 500;
@@ -634,17 +697,15 @@ a:hover {
   line-height: 60px;
 }
 .Partners_ {
-  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  height: 72px;
   text-align: center;
 }
 .Partners_ div {
-  float: left;
   width: 180px;
   height: 72px;
   background: #31333a;
-  margin-left: 74px;
 }
 .beta {
   width: 100%;
@@ -693,19 +754,14 @@ a:hover {
   width: 100%;
   height: 325px;
   background: #272a36;
+  padding: 60px 0 0 0;
 }
 .list_1 {
-  float: left;
-  width: 36%;
   height: 100%;
 }
 .list_1 img {
-  margin-left: 157px;
-  margin-top: 60px;
 }
 .time {
-  margin-left: 157px;
-  height: 12px;
   font-size: 14px;
   font-family: SourceHanSansCN-Regular, SourceHanSansCN;
   font-weight: 400;
@@ -713,12 +769,10 @@ a:hover {
   line-height: 18px;
 }
 .list_2 {
-  float: left;
-  width: 15%;
   height: 100%;
 }
 .list_2 div {
-  margin-top: 25px;
+  margin-bottom: 25px;
   height: 16px;
   font-size: 16px;
   font-family: SourceHanSansCN-Regular, SourceHanSansCN;
@@ -726,14 +780,9 @@ a:hover {
   color: #bfbfbf;
 }
 .list_4 {
-  float: left;
-  width: 34%;
   height: 100%;
 }
 .contact {
-  margin-top: 60px;
-
-  height: 20px;
   font-size: 20px;
   font-family: SourceHanSansCN-Regular, SourceHanSansCN;
   font-weight: 400;
