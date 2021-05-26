@@ -70,35 +70,62 @@
             data-wow-offset="10"
             data-wow-iteration="1"
           >
-            MatrixETF conceives a financial world in which the acquisition of wealth is a passive and automated process. Anyone can make fortune through the Internet regardless of geography and infrastructure, and obtain an open and transparent investment portfolio and various investment strategies to quickily and easily participate in DeFi finance so as to obtain income and incentives, and jointly determine the direction of development through DAO community. <br>
+            MatrixETF conceives a financial world in which the acquisition of
+            wealth is a passive and automated process. Anyone can make fortune
+            through the Internet regardless of geography and infrastructure, and
+            obtain an open and transparent investment portfolio and various
+            investment strategies to quickily and easily participate in DeFi
+            finance so as to obtain income and incentives, and jointly determine
+            the direction of development through DAO community. <br />
             The future belongs to every MatrixETF participant.
           </div>
         </div>
-        <div class="row page2_imgBox">
+        <div class="row page2_imgBox text-center">
           <div class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
             <img
-              class="wow lightSpeedIn"
+              class="wow lightSpeedIn hidden-xs"
               data-wow-offset="10"
               data-wow-iteration="1"
               src="../img/user.png"
               alt=""
             />
+            <img
+              class="wow lightSpeedIn visible-xs-inline"
+              data-wow-offset="10"
+              data-wow-iteration="1"
+              src="../img/bg1@2x.png"
+              alt=""
+            />
           </div>
           <div class="col-xs-12 col-sm-7 col-md-5 col-lg-5">
             <img
-              class="wow lightSpeedIn"
+              class="wow lightSpeedIn hidden-xs"
               data-wow-offset="20"
               data-wow-iteration="1"
               src="../img/etf.png"
               alt=""
             />
+            <img
+              class="wow lightSpeedIn visible-xs-inline"
+              data-wow-offset="10"
+              data-wow-iteration="1"
+              src="../img/bg2@2x.png"
+              alt=""
+            />
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <img
-              class="wow lightSpeedIn"
+              class="wow lightSpeedIn hidden-xs"
               data-wow-offset="30"
               data-wow-iteration="1"
               src="../img/Diversified.png"
+              alt=""
+            />
+            <img
+              class="wow lightSpeedIn visible-xs-inline"
+              data-wow-offset="10"
+              data-wow-iteration="1"
+              src="../img/bg3@2x.png"
               alt=""
             />
           </div>
@@ -118,7 +145,7 @@
           </div>
         </div>
         <div
-          class="row marginTop text-center wow fadeInRightBig"
+          class="row marginTop wow fadeInRightBig"
           data-wow-offset="10"
           data-wow-iteration="1"
         >
@@ -130,7 +157,7 @@
           </div>
         </div>
         <div
-          class="row marginTop text-center wow fadeInRightBig"
+          class="row marginTop wow fadeInRightBig"
           data-wow-offset="10"
           data-wow-iteration="1"
         >
@@ -142,7 +169,7 @@
           </div>
         </div>
         <div
-          class="row marginTop text-center wow fadeInRightBig"
+          class="row marginTop wow fadeInRightBig"
           data-wow-offset="10"
           data-wow-iteration="1"
         >
@@ -245,7 +272,8 @@
 
       <div class="beta">Join Us</div>
       <div class="nowText">
-        Our product is about to go into beta, and would you want to be involved in product testing as a creator or ambassador? Apply now!
+        Our product is about to go into beta, and would you want to be involved
+        in product testing as a creator or ambassador? Apply now!
       </div>
       <div class="APPLYBox">
         <div class="APPLY">
@@ -254,27 +282,27 @@
       </div>
     </div>
 
-    <div class="home_page8 container-fluid hidden-xs">
+    <div class="home_page8 container-fluid">
       <div class="row">
         <div class="col-sm-1"></div>
-        <div class="list_1 col-sm-3">
+        <div class="list_1 col-sm-3 col-xs-12 text-center">
           <img src="../img/MatrixDao.png" alt="" />
           <div class="time">©2020 MatrixETF</div>
         </div>
-        <div class="list_2 col-sm-2">
+        <div class="list_2 col-sm-2 hidden-xs">
           <div class="ed">Resources</div>
           <div>Whitelist</div>
           <div>Docs</div>
           <div>Brand suite</div>
           <div>Privacy Policy</div>
         </div>
-        <div class="list_2 col-sm-2">
+        <div class="list_2 col-sm-2 hidden-xs">
           <div class="ed">Token</div>
           <div>MDF</div>
           <div>Token contract address</div>
           <div>Token market value link</div>
         </div>
-        <div class="list_4 col-sm-4">
+        <div class="list_4 col-sm-4 hidden-xs">
           <div class="contact ed">Contact Us</div>
           <div class="bottomImg">
             <div>
@@ -322,7 +350,7 @@ export default {
   methods: {
     App() {
       //this.$router.push({ path: "/ETFs" });
-	  window.open('https://app.matrixetf.finance/','_blank')
+      window.open("https://app.matrixetf.finance/", "_blank");
     }
   },
   mounted() {
@@ -416,7 +444,7 @@ a {
   height: 100vh;
   /* background: url(../img/bg.png)no-repeat; */
   background: url(../img/donghua.gif) no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   display: flex;
   align-items: center;
 }
@@ -509,7 +537,7 @@ a:hover {
   width: 100%;
   min-height: 100vh;
   background: url(../img/bg3.png) no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   overflow-x: hidden;
   display: flex;
   align-items: center;
@@ -560,7 +588,7 @@ a:hover {
   width: 100%;
   min-height: 100vh;
   background: url(../img/bg_yuan.png) no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   overflow-x: hidden;
   display: flex;
   align-items: center;
@@ -589,7 +617,7 @@ a:hover {
   min-height: 100vh;
   background: url(../img/zhanshi.png) no-repeat;
   /* background: url(../img/zhanshi1.png)no-repeat; */
-  background-size: 100% 100%;
+  background-size: cover;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -616,7 +644,7 @@ a:hover {
   width: 100%;
   min-height: 100vh;
   background: url(../img/bg_4.png) no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -639,7 +667,7 @@ a:hover {
   width: 100%;
   height: 150%;
   background: url(../img/bg_4.png) no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   overflow-x: hidden;
 }
 .empty6 {
@@ -674,7 +702,7 @@ a:hover {
   width: 709px;
   height: 413px;
   /* background: url(../img/bingtu.png)no-repeat;
-		background-size: 100% 100%; */
+		background-size: cover; */
 }
 .home_page7 {
   width: 100%;
@@ -750,9 +778,8 @@ a:hover {
 }
 .home_page8 {
   width: 100%;
-  height: 325px;
   background: #272a36;
-  padding: 60px 0 0 0;
+  padding: 60px 0 30px 0;
 }
 .list_1 {
   height: 100%;
