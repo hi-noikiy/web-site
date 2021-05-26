@@ -7,10 +7,13 @@
 			<div class="rightMenu">
 				<ul class="nav nav-pills navWidth">
 					<li role="presentation" class="">
+						<a href="https://matrixetf.finance/#/"  target="_blank"><span class='ed_'>Home</span></a>
+					</li>
+					<li role="presentation" class="">
 						<a href="#" ><span class='ed'>ETFs</span></a>
 					</li>
 					<li role="presentation">
-						<a class='ed_'><span>Mswap</span></a>
+						<a class='ash'><span>Mswap</span></a>
 					</li>
 					<li role="presentation">
 						<a class='ash'><span>Farming</span></a>

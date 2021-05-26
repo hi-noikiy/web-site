@@ -43,7 +43,7 @@
           data-wow-iteration="1"
         >
           <div class="col-xs-8 col-sm-3 col-md-2 col-lg-2">
-            <div class="launch">Launch APP</div>
+            <div class="launch" @click="App">Launch APP</div>
           </div>
           <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 more">
             Read More
@@ -70,10 +70,8 @@
             data-wow-offset="10"
             data-wow-iteration="1"
           >
-            MatrixETF is building a Decentralized, automated, personalized, and
-            diversified investment <br />
-            portfolio for you to easily achieve long-term and stable wealth
-            growth.
+            MatrixETF conceives a financial world in which the acquisition of wealth is a passive and automated process. Anyone can make fortune through the Internet regardless of geography and infrastructure, and obtain an open and transparent investment portfolio and various investment strategies to quickily and easily participate in DeFi finance so as to obtain income and incentives, and jointly determine the direction of development through DAO community. <br>
+            The future belongs to every MatrixETF participant.
           </div>
         </div>
         <div class="row page2_imgBox">
@@ -245,10 +243,9 @@
         </div>
       </div>
 
-      <div class="beta">Join Our Public Beta</div>
+      <div class="beta">Join Us</div>
       <div class="nowText">
-        Interested in joining our public beta Waiting list？ Apply as a Creator
-        or Ambassador to our first APP now!
+        Our product is about to go into beta, and would you want to be involved in product testing as a creator or ambassador? Apply now!
       </div>
       <div class="APPLYBox">
         <div class="APPLY">

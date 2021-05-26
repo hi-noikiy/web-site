@@ -7,10 +7,13 @@
 			<div class="rightMenu">
 				<ul class="nav nav-pills navWidth">
 					<li role="presentation" class="">
+						<a href="https://matrixetf.finance/#/"  target="_blank"><span class='ed_'>Home</span></a>
+					</li>
+					<li role="presentation" class="">
 						<a href="#" ><span class='ed'>ETFs</span></a>
 					</li>
 					<li role="presentation">
-						<a class='ed_'><span>Mswap</span></a>
+						<a class='ash'><span>Mswap</span></a>
 					</li>
 					<li role="presentation">
 						<a class='ash'><span>Farming</span></a>
@@ -92,12 +95,12 @@
 					<div class="ETFs_tab_subject">
 						<div class="bd">
 							<div v-show="now === '1'">
-								<div class="col-md-12">
+								<!-- <div class="col-md-12">
 									<div class='shareText'>
 										Add liquidity in one of the underlying pool tokens. Tokens will be sent to <br>
 										the pool, and you will receive the PIPT as a share.
 									</div>
-								</div>
+								</div> -->
 								
 								<div class="col-md-4">
 									<div class='amountText'>
@@ -148,14 +151,14 @@
 									</div>
 								</div>
 								<div class="col-md-12">
-									<div class='PIPTTextTitle'>PIPT amount</div>
+									<div class='PIPTTextTitle'>TDE amount</div>
 								</div>
 								
 								<div class="col-md-12">
 									<div class='inputBox'>
 										<input type="text" v-model="amountNum">
 										<span class='PIPTText'>
-											PIPT
+											TDE
 										</span>
 										<span class='piptBox'>
 											<img src="../img/pipt.png" alt="">
@@ -171,13 +174,13 @@
 								
 								<div class="col-md-6">
 									<div class='resultsText'>
-										1 PIPT = $
+										1 TDE = $
 									</div>
 								</div>
 								
 								<div class="col-md-12">
 									<div class='poolText'>
-										0.1% enter fee or 0 PIPT will be transfered to community pool
+										0.1% enter fee or 0 TDE will be transfered to community pool
 									</div>
 								</div>
 								
@@ -191,11 +194,11 @@
 								<div class="col-md-12">
 									<div class='shareText'>
 										Add liquidity in one of the underlying pool tokens. Tokens will be sent to <br>
-										the pool, and you will receive the PIPT as a share.
+										the pool, and you will receive the TDE as a share.
 									</div>
 								</div>
 								<div class="col-md-12">
-									<div class='PIPTTextTitle'>PIPT amount</div>
+									<div class='PIPTTextTitle'>TDE amount</div>
 								</div>
 								<div class="col-md-12">
 									<div class='inputBox'>
@@ -455,7 +458,7 @@
 								
 								<div class="col-md-12">
 									<div class='poolText'>
-										0.1% enter fee or 0 PIPT will be transfered to community pool
+										0.1% enter fee or 0 TDE will be transfered to community pool
 									</div>
 								</div>
 								
@@ -588,14 +591,13 @@
 								<div class='row padding30'>
 									<div class="col-md-12">
 										<div class='shareText'>
-											Add liquidity in one of the underlying pool tokens. Tokens will be sent to <br>
-											the pool, and you will receive the PIPT as a share.
+											Remove liquidity in one transaction. Your PIPT will be automatically swapped to 8 different pool components.
 										</div>
 									</div>
 									
 									<div class="col-md-4">
 										<div class='amountText'>
-										  PIPT amount
+										  TDE amount
 										</div>
 									  
 									</div>
@@ -612,7 +614,7 @@
 									</div>
 									<div class="col-md-12">
 										<div class='inputBox'>
-											<input type="text" placeholder="PIPT amount">
+											<input type="text" placeholder="TDE amount">
 											<span class='downBox'>
 												<img src="../img/down.png" alt="">
 											</span>
@@ -635,7 +637,7 @@
 									</div>
 									<div class="col-md-12">
 										<div class='poolText'>
-											0.1% enter fee or 0 PIPT will be transfered to community pool
+											0.1% enter fee or 0 TDE will be transfered to community pool
 										</div>
 									</div>
 									<div class="col-md-12">
@@ -746,7 +748,7 @@
 							</div>
 							<div v-show="now === '5'">
 								<div class='row padding30'>
-									<div class="col-md-12 ">
+									<!-- <div class="col-md-12 ">
 										<div class='infoBox'>
 											<img src="../img/info.png" alt="">
 										</div>
@@ -774,7 +776,7 @@
 										<div class='infoListBox'>
 											<img src="../img/ccoingecko.png" alt="">
 										</div>
-									</div>
+									</div> -->
 									
 									<div class="col-md-12 ">
 										<div class='ummaryText'>
