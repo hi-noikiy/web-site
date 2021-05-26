@@ -321,7 +321,9 @@ export default {
   },
   methods: {
     App() {
-      this.$router.push({ path: "/ETFs" });
+      //this.$router.push({ path: "/ETFs" });
+	  https://app.matrixetf.finance/#/
+	  window.open('https://app.matrixetf.finance/','_blank')
     }
   },
   mounted() {
