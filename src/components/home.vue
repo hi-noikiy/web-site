@@ -674,7 +674,7 @@ a:hover {
   height: 100px;
 }
 .featuresText {
-  margin: 30px 0;
+  margin: 60px 0;
   text-align: center;
   font-size: 24px;
   font-family: SourceHanSansCN-Medium, SourceHanSansCN;
