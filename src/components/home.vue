@@ -10,9 +10,9 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a @click="App">App</a></li>
+            <li><a href="https://docs.matrixetf.finance/" target="_blank">Docs</a></li>
+            <li><a href="https://matrixetf.medium.com/" target="_blank">Blog</a></li>
+            <li><a @click="ETF">App</a></li>
           </ul>
         </div>
         <!--/.nav-collapse -->
@@ -43,7 +43,7 @@
           data-wow-iteration="1"
         >
           <div class="col-xs-8 col-sm-3 col-md-2 col-lg-2">
-            <div class="launch" @click="App">Launch APP</div>
+            <div class="launch" @click="ETF">Launch APP</div>
           </div>
           <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 more">
             Read More
@@ -291,16 +291,16 @@
         </div>
         <div class="list_2 col-sm-2 hidden-xs">
           <div class="ed">Resources</div>
-          <div>Whitelist</div>
-          <div>Docs</div>
+         <!-- <div>Whitelist</div> -->
+          <div><a href="https://docs.matrixetf.finance/" target="_blank">Docs</a> </div>
           <div>Brand suite</div>
-          <div>Privacy Policy</div>
+          <!-- <div>Privacy Policy</div> -->
         </div>
         <div class="list_2 col-sm-2 hidden-xs">
           <div class="ed">Token</div>
-          <div>MDF</div>
-          <div>Token contract address</div>
-          <div>Token market value link</div>
+          <div><a href="https://docs.matrixetf.finance/token-economy/untitled" target="_blank">MDF</a> </div>
+          <!-- <div>Token contract address</div>
+          <div>Token market value link</div> -->
         </div>
         <div class="list_4 col-sm-4 hidden-xs">
           <div class="contact ed">Contact Us</div>
@@ -348,9 +348,9 @@ export default {
     };
   },
   methods: {
-    App() {
+    ETF() {
       //this.$router.push({ path: "/ETFs" });
-      //window.open("https://app.matrixetf.finance/", "_blank");
+      window.open("https://app.matrixetf.finance/", "_blank");
     }
   },
   mounted() {
