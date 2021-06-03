@@ -252,31 +252,56 @@
     </div>
 
     <div class="home_page7 container-fluid">
-      <div class="container">
-        <div
-          class="row wow slideInDown"
+     <!-- <div class="container">
+         <div
+          class="row wow slideInDown top30"
           data-wow-offset="10"
           data-wow-iteration="1"
         >
           <p class="partners">Investors & Partners</p>
         </div>
 
-        <div class="Partners_ row">
+        <div class="Partners_ row top30">
           <div class="empty_ hidden-xs"></div>
           <div class="empty_ hidden-xs"></div>
           <div class="empty_ hidden-xs"></div>
           <div class="empty_"></div>
           <div class="empty_"></div>
-        </div>
-      </div>
+        </div> 
+      </div>-->
 
-      <div class="beta">Join Us</div>
+		<div class="row padding100">
+			<p class="partners ">Investors & Partners</p>
+		</div>
+		
+		<div class="row top50">
+			<div class='col-md-8 col-md-offset-2'>
+				<div class="Partners_ row top30">
+				  <div class="empty_ hidden-xs morningstar"></div>
+				  <div class="empty_ hidden-xs cms"></div>
+				  <div class="empty_ hidden-xs Divergence"></div>
+				  <div class="empty_ spark"></div>
+				</div> 
+			</div>
+			
+			<div class='col-md-8 col-md-offset-2 top50'>
+				<div class="Partners_ row top30">
+					<div class="empty_ hidden-xs null"></div>
+					<div class="empty_ hidden-xs GBV"></div>
+					<div class="empty_ hidden-xs moon"></div>
+					<div class="empty_ hidden-xs null"></div>
+				</div> 
+			</div>
+			
+		</div>
+		
+     <div class="beta ">Join Us</div>
       <div class="nowText">
         Our product is about to go into beta, and would you want to be involved
         in product testing as a creator or ambassador? Apply now!
       </div>
       <div class="APPLYBox">
-        <div class="APPLY">
+        <div class="APPLY" @click="now">
           APPLY NOW
         </div>
       </div>
@@ -293,7 +318,7 @@
           <div class="ed">Resources</div>
          <!-- <div>Whitelist</div> -->
           <div><a href="https://docs.matrixetf.finance/" target="_blank">Docs</a> </div>
-          <div>Brand suite</div>
+          <div>Brand suite (soon)</div>
           <!-- <div>Privacy Policy</div> -->
         </div>
         <div class="list_2 col-sm-2 hidden-xs">
@@ -326,16 +351,31 @@
               </a>
             </div>
           </div>
-          <div class="newsletter ed">Subscribe to newsletter</div>
+		  <div id="mc_embed_signup">
+			<form action="https://finance.us1.list-manage.com/subscribe/post?u=cf95d53f7ad6aaec0a68b0854&amp;id=5879f45d58" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<div id="mc_embed_signup_scroll">
+			
+					<div class="mc-field-group">
+						<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+						</label>
+						<input type="email" value="" name="EMAIL" class="required email input_" id="mce-EMAIL">
+					</div>
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cf95d53f7ad6aaec0a68b0854_5879f45d58" tabindex="-1" value=""></div>
+					<div class="clear subscribe"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+				</div>
+			</form>
+		  </div>
+          <!-- <div class="newsletter ed">Subscribe to newsletter</div>
           <div class="inputBox">
             <input class="input_" type="text" placeholder="Email Address" />
           </div>
-          <div class="subscribe">subscribe</div>
+          <div class="subscribe">subscribe</div> -->
         </div>
       </div>
     </div>
   </div>
 </template>
+ <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <script>
 import { WOW } from "wowjs";
 import "@/css/animate.min.css";
@@ -351,7 +391,10 @@ export default {
     ETF() {
       //this.$router.push({ path: "/ETFs" });
       window.open("https://app.matrixetf.finance/", "_blank");
-    }
+    },
+	now(){
+		 window.open("https://forms.gle/8T53EChmjiNWzgHH7", "_blank");
+	},
   },
   mounted() {
     const wow = new WOW({
@@ -378,6 +421,13 @@ export default {
 }
 .top30 {
   top: 30px;
+}
+.top50 {
+  top: 50px;
+}
+.padding100{
+	padding-top: 100px;
+	height: 200px;
 }
 .marginLeft70 {
   margin-left: 70px;
@@ -729,9 +779,32 @@ a:hover {
   text-align: center;
 }
 .Partners_ div {
-  width: 180px;
-  height: 72px;
+ width: 180px;
+ height: 72px;
   background: #31333a;
+}
+.null{
+	width: 180px;
+	height: 72px;
+	background:transparent!important
+}
+.morningstar{
+	background: url(../img/morningstar-black-clear.png)!important;
+}
+.cms{
+	background: url(../img/cms.png)!important;
+}
+.Divergence{
+	background: url(../img/Divergence.png)!important;
+}
+.spark{
+	background: url(../img/spark.png)!important;
+}
+.GBV{
+	background: url(../img/GBV.png)!important;
+}
+.moon{
+	background: url(../img/moon.png)!important;
 }
 .beta {
   width: 100%;
@@ -878,5 +951,9 @@ input::-webkit-input-placeholder {
 .ed {
   color: #fff !important;
   font-weight: 600 !important;
+}
+.subscribe input{
+	background: transparent!important;
+	border: 0px!important;
 }
 </style>
