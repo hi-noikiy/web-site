@@ -312,7 +312,7 @@
         <div class="col-sm-1"></div>
         <div class="list_1 col-sm-3 col-xs-12 text-center">
           <img src="../img/MatrixDao.png" alt="" />
-          <div class="time">©2020 MatrixETF</div>
+          <div class="time">©2021 MatrixETF</div>
         </div>
         <div class="list_2 col-sm-2 hidden-xs">
           <div class="ed">Resources</div>
@@ -356,7 +356,7 @@
 				<div id="mc_embed_signup_scroll">
 			
 					<div class="mc-field-group">
-						<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+						<label for="mce-EMAIL" style="height: 10px; width: 100%;"><!-- Email Address  <span class="asterisk">*</span> -->
 						</label>
 						<input type="email" value="" name="EMAIL" class="required email input_" id="mce-EMAIL">
 					</div>
@@ -427,7 +427,7 @@ export default {
 }
 .padding100{
 	padding-top: 100px;
-	height: 200px;
+	height: 155px;
 }
 .marginLeft70 {
   margin-left: 70px;
@@ -808,7 +808,7 @@ a:hover {
 }
 .beta {
   width: 100%;
-  margin-top: 160px;
+  margin-top: 213px;
   text-align: center;
   height: 60px;
   font-size: 40px;
