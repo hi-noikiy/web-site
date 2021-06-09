@@ -277,7 +277,7 @@
 		<div class="row top50">
 			<div class='col-md-8 col-md-offset-2'>
 				<div class="Partners_ row top30">
-				  <div class="empty_ hidden-xs morningstar"></div>
+				  <div class="empty_ hidden-xs solana"></div>
 				  <div class="empty_ hidden-xs cms"></div>
 				  <div class="empty_ hidden-xs Divergence"></div>
 				  <div class="empty_ spark"></div>
@@ -286,10 +286,10 @@
 			
 			<div class='col-md-8 col-md-offset-2 top50'>
 				<div class="Partners_ row top30">
-					<div class="empty_ hidden-xs null"></div>
+					<div class="empty_ hidden-xs morningstar"></div>
 					<div class="empty_ hidden-xs GBV"></div>
 					<div class="empty_ hidden-xs moon"></div>
-					<div class="empty_ hidden-xs null"></div>
+					<div class="empty_ hidden-xs AU"></div>
 				</div> 
 			</div>
 			
@@ -358,7 +358,7 @@
 					<div class="mc-field-group">
 						<label for="mce-EMAIL" style="height: 10px; width: 100%;"><!-- Email Address  <span class="asterisk">*</span> -->
 						</label>
-						<input type="email" value="" name="EMAIL" class="required email input_" id="mce-EMAIL">
+						<input type="email" value="" name="EMAIL" class="required email paddingLeft input_" id="mce-EMAIL" placeholder="E-mail address">
 					</div>
 					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cf95d53f7ad6aaec0a68b0854_5879f45d58" tabindex="-1" value=""></div>
 					<div class="clear subscribe"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
@@ -437,6 +437,9 @@ export default {
 }
 .marginTop {
   /* margin-top: 60px; */
+}
+.paddingLeft{
+	padding-left: 10px;
 }
 .page {
   width: 100%;
@@ -805,6 +808,12 @@ a:hover {
 }
 .moon{
 	background: url(../img/moon.png)!important;
+}
+.AU{
+	background: url(../img/AU21.png)!important;
+}
+.solana{
+	background: url(../img/solana.png)!important;
 }
 .beta {
   width: 100%;
