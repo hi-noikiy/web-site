@@ -45,7 +45,7 @@
           <div class="col-xs-8 col-sm-3 col-md-2 col-lg-2">
             <div class="launch" @click="ETF">Launch APP</div>
           </div>
-          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 more">
+          <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 more" @click="read">
             Read More
             <span>></span>
           </div>
@@ -271,28 +271,95 @@
       </div>-->
 
 		<div class="row padding100">
-			<p class="partners ">Investors & Partners</p>
+			<p class="partners ">Investors</p>
 		</div>
 		
 		<div class="row top50">
-			<div class='col-md-8 col-md-offset-2'>
+			<div class='col-md-8 col-md-offset-2 text-center  phone'>
+				<div class="col-md-3">
+					<img src="../img/morningstar-black-clear.png" alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="../img/solana.png" alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="../img/cms.png" alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="../img/spark.png" alt="">
+				</div>
+				
+			</div>
+			
+			<div class='col-md-8 col-md-offset-2 text-center  top50  phone'>
+				<div class="col-md-3">
+					<img src="../img/Divergence.png" alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="../img/moon.png" alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="../img/AU21.png" alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="../img/grey.png" alt="">
+				</div>
+				
+			</div>
+			
+			<div class='col-md-8 col-md-offset-2 text-center  top50  phone'>
+				<!-- <div class="col-md-3">
+					<img src="../img/GBV.png" alt="">
+				</div> -->
 				<div class="Partners_ row top30">
-				  <div class="empty_ hidden-xs solana"></div>
-				  <div class="empty_ hidden-xs cms"></div>
-				  <div class="empty_ hidden-xs Divergence"></div>
-				  <div class="empty_ spark"></div>
+						<div class="empty_  GBV"></div>
+					
 				</div> 
 			</div>
 			
-			<div class='col-md-8 col-md-offset-2 top50'>
+			<!-- <div class='col-md-8 col-md-offset-2 top50'>
 				<div class="Partners_ row top30">
-					<div class="empty_ hidden-xs morningstar"></div>
-					<div class="empty_ hidden-xs GBV"></div>
+					<div class="empty_ hidden-xs Divergence"></div>
 					<div class="empty_ hidden-xs moon"></div>
 					<div class="empty_ hidden-xs AU"></div>
+					<div class="empty_ hidden-xs grey"></div>
+					
 				</div> 
 			</div>
+			<div class='col-md-8 col-md-offset-2 top50'>
+				<div class="Partners_ row top30">
+						<div class="empty_ hidden-xs GBV"></div>
+					
+				</div> 
+			</div> -->
 			
+			
+		</div>
+		<div class="row padding110">
+			<p class="partners ">Partners</p>
+		</div>
+		<div class="row top50">
+			<div class='col-md-8 col-md-offset-2 text-center  top50'>
+				<div class="col-md-4 text-left phoneText">
+					<img src="../img/mxc.png" alt="">
+				</div>
+				<div class="col-md-4">
+					<img src="../img/okex.png" alt="">
+				</div>
+				<div class="col-md-4 text-right phoneText">
+					<img style='width: 180px;height: 72px;' src="../img/parsiq.png" alt="">
+				</div>
+				
+				
+			</div>
+			<!-- <div class='col-md-8 col-md-offset-2 top100'>
+				<div class="Partners_ row top30">
+					<div class="empty_ hidden-xs mxc"></div>
+					<div class="empty_ hidden-xs okex"></div>
+					<div class="empty_ hidden-xs parsiq"></div>
+					
+				</div> 
+			</div> -->
 		</div>
 		
      <div class="beta ">Join Us</div>
@@ -395,6 +462,9 @@ export default {
 	now(){
 		 window.open("https://forms.gle/8T53EChmjiNWzgHH7", "_blank");
 	},
+	read(){
+		 window.open("https://docs.matrixetf.finance/", "_blank");
+	}
   },
   mounted() {
     const wow = new WOW({
@@ -425,8 +495,15 @@ export default {
 .top50 {
   top: 50px;
 }
+.top100{
+	top:100px;
+}
 .padding100{
 	padding-top: 100px;
+	height: 155px;
+}
+.padding110{
+	padding-top: 200px;
 	height: 155px;
 }
 .marginLeft70 {
@@ -793,15 +870,23 @@ a:hover {
 }
 .morningstar{
 	background: url(../img/morningstar-black-clear.png)!important;
+	background-repeat:no-repeat!important;
+	height: 72px;
 }
 .cms{
 	background: url(../img/cms.png)!important;
+	background-repeat:no-repeat!important;
+	height: 72px;
 }
 .Divergence{
 	background: url(../img/Divergence.png)!important;
+	background-repeat:no-repeat!important;
+	height: 72px;
 }
 .spark{
 	background: url(../img/spark.png)!important;
+	background-repeat:no-repeat!important;
+	height: 72px;
 }
 .GBV{
 	background: url(../img/GBV.png)!important;
@@ -814,10 +899,24 @@ a:hover {
 }
 .solana{
 	background: url(../img/solana.png)!important;
+	background-repeat:no-repeat!important;
+	height: 72px;
 }
+.okex{
+	background: url(../img/okex.png)!important;
+}
+.mxc{
+	background: url(../img/mxc.png)!important;
+}
+.grey{
+	background: url(../img/grey.png)!important;
+}
+/* .parsiq{
+	background: url(../img/parsiq.png)!important;
+} */
 .beta {
   width: 100%;
-  margin-top: 213px;
+  margin-top: 278px;
   text-align: center;
   height: 60px;
   font-size: 40px;
@@ -964,5 +1063,18 @@ input::-webkit-input-placeholder {
 .subscribe input{
 	background: transparent!important;
 	border: 0px!important;
+}
+
+
+@media (max-width: 768px){
+	.phone{
+		top: 0px;
+	}
+	.phone img{
+		margin-top: 20px;
+	}
+	.phoneText{
+		text-align: center;
+	}
 }
 </style>

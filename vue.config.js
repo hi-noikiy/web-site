@@ -4,6 +4,7 @@ module.exports = {
     outputDir:'dist',
     assetsDir:'assets',
     lintOnSave:false,
+	productionSourceMap: false,
 	configureWebpack: {
 		plugins: [
 			new webpack.ProvidePlugin({
