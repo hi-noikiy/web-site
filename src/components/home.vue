@@ -1,5 +1,6 @@
 <template>
   <div class="page" id="page">
+	 
     <nav class="navbar navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -340,7 +341,7 @@
 		</div>
 		<div class="row top50">
 			<div class='col-md-8 col-md-offset-2 text-center  top50'>
-				<div class="col-md-4 text-left phoneText">
+				<!-- <div class="col-md-4 text-left phoneText">
 					<img src="../img/mxc.png" alt="">
 				</div>
 				<div class="col-md-4">
@@ -348,18 +349,34 @@
 				</div>
 				<div class="col-md-4 text-right phoneText">
 					<img style='width: 180px;height: 72px;' src="../img/parsiq.png" alt="">
+				</div> -->
+				
+				<div class="col-md-3">
+						<img src="../img/mxc.png" alt="">
 				</div>
-				
-				
+				<div class="col-md-3">
+					<img src="../img/okex.png" alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="../img/parsiq.png" class='imgZise' alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="../img/polygon.png" class='imgZise' alt="">
+				</div>
 			</div>
-			<!-- <div class='col-md-8 col-md-offset-2 top100'>
-				<div class="Partners_ row top30">
-					<div class="empty_ hidden-xs mxc"></div>
-					<div class="empty_ hidden-xs okex"></div>
-					<div class="empty_ hidden-xs parsiq"></div>
+			<div class='col-md-8 col-md-offset-2 text-center  top50  phone'>
+				<div class="col-md-3  col-md-offset-3  top50">
+						<img src="../img/chainlink.png" alt="">
+				</div>
+				<div class="col-md-3 top50">
+					<img src="../img/gate.png" alt="">
+				</div>
+				<!-- <div class="Partners_ row top30">
+					<div class="empty_  chainlink "></div>
 					
-				</div> 
-			</div> -->
+				</div> -->
+			</div>
+			
 		</div>
 		
      <div class="beta ">Join Us</div>
@@ -385,8 +402,14 @@
           <div class="ed">Resources</div>
          <!-- <div>Whitelist</div> -->
           <div><a href="https://docs.matrixetf.finance/" target="_blank">Docs</a> </div>
-          <div>Brand suite (soon)</div>
-          <!-- <div>Privacy Policy</div> -->
+          
+		  <div><a href="https://matrixetf.finance/Disclaimer" target="_blank">Notice and Disclaimer</a> </div>
+		 
+		  <div><a href="https://drive.google.com/file/d/1UoouQEJ-HEx9kQOTltwwo97bCXemuDHm/view?usp=sharing" target="_blank">Whitepaper</a> </div>
+          
+		  <div>Brand suite (soon)</div>
+		  <!-- <div>Privacy Policy</div> -->
+		  
         </div>
         <div class="list_2 col-sm-2 hidden-xs">
           <div class="ed">Token</div>
@@ -440,18 +463,24 @@
         </div>
       </div>
     </div>
+	<Policy class='bottom_Policy' v-if='!policyState'></Policy>
   </div>
 </template>
  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <script>
 import { WOW } from "wowjs";
 import "@/css/animate.min.css";
-
+import Policy from "@/components/policy";
+import Bus from '@/util/bus'
 export default {
   name: "home",
+  components: {
+  	Policy
+  },
   data() {
     return {
-      show: ""
+      show: "",
+	  policyState:false
     };
   },
   methods: {
@@ -464,6 +493,26 @@ export default {
 	},
 	read(){
 		 window.open("https://docs.matrixetf.finance/", "_blank");
+	},
+	
+	getCookie(name) {
+		
+	    var prefix = name + "="
+	    var start = document.cookie.indexOf(prefix)
+		
+	    if (start == -1) {
+			
+	        return null;
+	    }
+	    var end = document.cookie.indexOf(";", start + prefix.length)
+	    if (end == -1) {
+	        end = document.cookie.length;
+	    }
+	 
+	    var value = document.cookie.substring(start + prefix.length, end)
+		this.policyState = value
+	
+	    return unescape(value);
 	}
   },
   mounted() {
@@ -476,6 +525,12 @@ export default {
       scrollContainer: null
     });
     wow.init();
+	var  Policy = 'policy'
+	this.getCookie(Policy)
+	
+	Bus.$on('Policy',val=>{
+		this.policyState = val
+	})
   }
 };
 </script>
@@ -886,10 +941,15 @@ a:hover {
 .spark{
 	background: url(../img/spark.png)!important;
 	background-repeat:no-repeat!important;
-	height: 72px;
+	
 }
 .GBV{
 	background: url(../img/GBV.png)!important;
+	
+}
+.chainlink{
+	background: url(../img/chainlink.png)!important;
+	
 }
 .moon{
 	background: url(../img/moon.png)!important;
@@ -1064,7 +1124,18 @@ input::-webkit-input-placeholder {
 	background: transparent!important;
 	border: 0px!important;
 }
-
+.imgZise{
+	width: 180px;
+	height: 72px;
+	
+}
+.bottom_Policy{
+	position: fixed; 
+	width: 100%;
+	left: 0px; 
+	bottom: 0px; 
+	z-index: 9999;
+}
 
 @media (max-width: 768px){
 	.phone{

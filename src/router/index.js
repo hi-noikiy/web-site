@@ -14,21 +14,27 @@ export default new Router({
 			}
 			
 		},
-		// {
-		// 	path: '/ETFs',
-		// 	name: 'ETFs',
-		// 	component: resolve => {
-		// 		require(['@/components/ETFs'], resolve);
-		// 	}
+		{
+			path: '/cookies',
+			name: 'cookies',
+			component: resolve => {
+				require(['@/components/cookies'], resolve);
+			}
+		},
+		{
+			path: '/Disclaimer',
+			name: 'Disclaimer',
+			component: resolve => {
+				require(['@/components/Disclaimer'], resolve);
+			}
+		},
+		{
+			path: '/policy',
+			name: 'policy',
+			component: resolve => {
+				require(['@/components/policy'], resolve);
+			}
 			
-		// },
-		// {
-		// 	path: '/details_ETFs',
-		// 	name: 'details_ETFs',
-		// 	component: resolve => {
-		// 		require(['@/components/details_ETFs'], resolve);
-		// 	}
-			
-		// },
+		},
 	]
 })
