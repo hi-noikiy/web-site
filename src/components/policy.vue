@@ -26,7 +26,7 @@ export default {
 	methods: {
 		Privacy(){
 			window.open("https://matrixetf.finance/cookies", "_blank");
-			// Bus.$emit('Policy', true)
+			
 		},
 		NO(){
 			Bus.$emit('Policy', true)

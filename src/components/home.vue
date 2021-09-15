@@ -350,26 +350,29 @@
 				<div class="col-md-4 text-right phoneText">
 					<img style='width: 180px;height: 72px;' src="../img/parsiq.png" alt="">
 				</div> -->
-				
-				<div class="col-md-3">
-						<img src="../img/mxc.png" alt="">
-				</div>
-				<div class="col-md-3">
-					<img src="../img/okex.png" alt="">
-				</div>
-				<div class="col-md-3">
-					<img src="../img/parsiq.png" class='imgZise' alt="">
-				</div>
 				<div class="col-md-3">
 					<img src="../img/polygon.png" class='imgZise' alt="">
 				</div>
+				<div class="col-md-3">
+					<img src="../img/gate.png" alt="">
+						
+				</div>
+				<div class="col-md-3">
+					<img src="../img/mxc.png" alt="">
+				
+				</div>
+				<div class="col-md-3">
+						<img src="../img/okex.png" alt="">
+					
+				</div>
+				
 			</div>
 			<div class='col-md-8 col-md-offset-2 text-center  top50  phone'>
 				<div class="col-md-3  col-md-offset-3  top50">
 						<img src="../img/chainlink.png" alt="">
 				</div>
 				<div class="col-md-3 top50">
-					<img src="../img/gate.png" alt="">
+					<img src="../img/parsiq.png" class='imgZise' alt="">
 				</div>
 				<!-- <div class="Partners_ row top30">
 					<div class="empty_  chainlink "></div>
