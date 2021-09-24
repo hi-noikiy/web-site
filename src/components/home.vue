@@ -20,7 +20,7 @@
       </div>
     </nav>
 
-    <div class="home_page0 container-fluid pcauto">
+    <!-- <div class="home_page0 container-fluid pcauto">
       <div class="container">
         <div class="row">
           <div class="col-xs-24  MatrixETFText" style="text-align:center;margin-top:-200px;font-size:50px"
@@ -49,7 +49,7 @@
         <el-button style="width:134px;background-color:black;border:2px solod #FFFFFF;border-radius:6px;margin-top:16px"
           class="enterh" @click="jumpto(item.pathurl)">Enter</el-button>
       </div>
-    </div>
+    </div> -->
 
 
 
@@ -478,6 +478,8 @@
             imgurl:require("../img/gate3.png"),
             ccc:false
             
+
+
           },
         ]
       };
