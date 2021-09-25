@@ -110,7 +110,7 @@
               class="wow lightSpeedIn visible-xs-inline"
               data-wow-offset="10"
               data-wow-iteration="1"
-              src="../img/bg2@2x.png"
+              src="../img/bg1@2x_.png"
               alt=""
             />
           </div>
